@@ -1,0 +1,57 @@
+html {
+  font-size: 100px;
+}
+
+body {
+  /* font-size: 16px;
+  font-family: SimHei; */
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  /* 抗锯齿 */
+  -moz-osx-font-smoothing: grayscale;
+  /* 兼容火狐的抗锯齿 */
+  font-weight: 500;
+  color: #333333;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: auto;
+  background-color: #f4f4f4;
+}
+
+/* html, body{
+  margin: 0;
+  padding: 0;
+  height: auto;
+  background-color: #f4f4f4;
+} */
+ol,
+dl,
+ul {
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+input,
+select,
+option,
+textarea,
+button {
+  outline: none;
+  /* border: none; */
+}
+
+::-webkit-input-placeholder {
+  color: #cccccc;
+}

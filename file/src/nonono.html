@@ -1,0 +1,54 @@
+<!--
+ * @Author: your name
+ * @Date: 2021-08-09 15:22:11
+ * @LastEditTime: 2021-10-28 15:35:38
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: \yanzheng\upLoad\nonono.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NO NO NO</title>
+    <style>
+        .box {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            /* margin: 0 auto;
+            display: flex;
+            flex: 1; */
+            transform: translate(-50%, -50%);
+        }
+
+        input {
+            width: 100%;
+            margin: 10px 0;
+            border: 1px solid yellowgreen;
+        }
+
+        #fileIpt {
+            border: 1px solid #000;
+        }
+
+        button {
+            height: 25px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <form id="form" method="POST" action="/upload" enctype="multipart/form-data">
+            <label for="content">你要说什么：</label><textarea name="content" type="text"></textarea>
+            <label for="file">你要传什么：</label><input type="file" name="file" id="fileIpt">
+            <button id='btn' type="submit">发送~go! </button>
+            <img src="" alt="">
+        </form>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,59 @@
+{
+  "name": "madp2.0",
+  "version": "1.1.0",
+  "description": "madp2.0 App",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --mode=production --config build/webpack.prod.js",
+    "dev": "webpack --mode=development --watch --config build/webpack.prod.js",
+    "prod": "webpack --mode=production --watch --config build/webpack.prod.js",
+    "serve": "webpack-dev-server --config build/webpack.dev.js --progress --color"
+  },
+  "keywords": [
+    "weex",
+    "vue",
+    "android",
+    "ios"
+  ],
+  "engines": {
+    "node": ">=8.9"
+  },
+  "author": "csii_mobile_pro_dev_center",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "vue": "^2.6.11",
+    "vue-router": "^3.3.2",
+    "vuex": "^3.4.0",
+    "weex-ui": "^0.8.4",
+    "weex-vue-render": "^1.0.36",
+    "@babel/runtime-corejs3": "^7.10.2"
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.8.0",
+    "babel-core": "^6.26.3",
+    "@babel/core": "^7.10.2",
+    "@babel/plugin-transform-runtime": "^7.10.1",
+    "@babel/preset-env": "^7.10.2",
+    "babel-loader": "^8.1.0",
+    "babel-plugin-component": "^1.1.1",
+    "clean-webpack-plugin": "^3.0.0",
+    "copy-webpack-plugin": "^6.0.2",
+    "css-loader": "^3.5.3",
+    "html-webpack-plugin": "^4.3.0",
+    "optimize-css-assets-webpack-plugin": "^5.0.3",
+    "postcss-loader": "^3.0.0",
+    "postcss-plugin-px2rem": "^0.8.1",
+    "postcss-plugin-weex": "^0.1.7",
+    "terser-webpack-plugin": "^3.0.3",
+    "vue-loader": "^15.9.2",
+    "vue-style-loader": "^4.1.2",
+    "vue-template-compiler": "^2.6.11",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.11.0",
+    "webpack-merge": "^4.2.2",
+    "webpack-uglify-parallel": "^0.1.4",
+    "weex-loader": "^0.7.12",
+    "weex-vue-precompiler": "^0.1.26"
+  }
+}

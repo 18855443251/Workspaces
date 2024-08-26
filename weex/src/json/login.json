@@ -1,0 +1,66 @@
+{
+    "msg": "00000000",
+    "firstFlag": "N",
+    "data": [
+        {
+            "menu_code": "WYH-WYH",
+            "menu_name": "微银行-微银行",
+            "menu_path": "wyhHome",
+            "sort_num": 1,
+            "dataScope": "0",
+            "branchs": null,
+            "subMenuList": []
+        },
+        {
+            "menu_code": "WYH-DB",
+            "menu_name": "微银行-待办",
+            "menu_path": "wyhHandle",
+            "sort_num": 2,
+            "dataScope": "0",
+            "branchs": null,
+            "subMenuList": []
+        },
+        {
+            "menu_code": "WYH-FX",
+            "menu_name": "微银行-发现",
+            "menu_path": "wyhFind",
+            "sort_num": 3,
+            "dataScope": "0",
+            "branchs": null,
+            "subMenuList": []
+        },
+        {
+            "menu_code": "WYH-XX",
+            "menu_name": "微银行-消息",
+            "menu_path": "wyhMessage",
+            "sort_num": 4,
+            "dataScope": "0",
+            "branchs": null,
+            "subMenuList": []
+        },
+        {
+            "menu_code": "WYH-WD",
+            "menu_name": "微银行-我的",
+            "menu_path": "wyhMy",
+            "sort_num": 5,
+            "dataScope": "0",
+            "branchs": null,
+            "subMenuList": []
+        }
+    ],
+    "user": {
+        "empid": "56366",
+        "empname": "坃啠",
+        "orgno": "01201",
+        "firstdeptcode": "01204",
+        "deptcode": "01204",
+        "orgname": "金坛支行",
+        "firstdeptname": "华城支行",
+        "deptname": "华城支行",
+        "position": "0900402138",
+        "empPost": "0900402138",
+        "skipflag": null,
+        "noticeflag": null
+    },
+    "status": "00000000"
+}

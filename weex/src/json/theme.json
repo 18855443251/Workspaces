@@ -1,0 +1,20 @@
+{
+    "brown": {
+        "fontColor": "#a67342",
+        "bgColor": "#fdf8f1",
+        "tabBgColor": "#cf9e6f",
+        "linearGradient": "linear-gradient(to bottom, #ffe2c6, #ffffff)",
+        "handled": "./imgs/bank/brown/handled.png",
+        "bgImg": "./imgs/bank/brown/bgImg.png",
+        "bgImgSmall": "./imgs/bank/brown/bgImgSmall.png",
+        "hangzhangBg": "./imgs/bank/brown/hangzhangBg.png",
+        "zaobaoBtn": "./imgs/bank/brown/zaobaoBtn.png",
+        "moveMoneySave": "./imgs/bank/brown/moveMoneySave.png",
+        "moveMoneyDeposit": "./imgs/bank/brown/moveMoneyDeposit.png",
+        "myBg": "./imgs/my/myBg.png"
+    },
+    "blue": {
+        "fontColor": "#0077e6",
+        "bgColor": "#fff"
+    }
+}

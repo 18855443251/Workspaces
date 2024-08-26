@@ -1,0 +1,8 @@
+ClearCase CopyAreaDB|4
+vobs\dtapp_vob\dtapp\bank\src\utils\mixins\standard
+2
+4
+8:index.js|1|184a30a6144|1d8|9e07a8ed|e8eb58ff2e2943419819c35dec5b37df|0
+8:other.js|1|184a30a6152|8a7|b5a5b72c|095d182de01841cdba2f2437994445bf|0
+9:number.js|1|184a30a6148|31c0|1609af65|15ecec64973046019a4d78428082fe08|0
+7:date.js|1|184a30a6145|2684|f31aa6bc|4c9a261d27aa4949a213e72d457cdb01|0

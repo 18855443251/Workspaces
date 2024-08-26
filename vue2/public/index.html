@@ -1,0 +1,115 @@
+<!--
+ * @Author: your name
+ * @Date: 2021-03-03 22:00:13
+ * @LastEditTime: 2022-08-12 13:40:28
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: \assetsLoad\public\index.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no" />
+  <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+  <title>手机银行</title>
+</head>
+<script>
+  // orientationchange监听手机的横竖屏发生切换
+  ;
+  (function (doc, win) {
+    var docEl = doc.documentElement,
+      resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+      recalc = function () {
+        var clientWidth = docEl.clientWidth
+        if (!clientWidth) return
+        docEl.style.fontSize = clientWidth / 10 + 'px'
+      }
+
+    if (!doc.addEventListener) return
+    win.addEventListener(resizeEvt, recalc, false)
+    doc.addEventListener('DOMContentLoaded', recalc, false)
+  })(document, window)
+</script>
+<script>
+  if (!window.context) {
+    window.context = {
+      sessionSetString: (key, value) => {
+        sessionStorage.setItem(key, value)
+      },
+      sessionGetString: (key) => {
+        return sessionStorage.getItem(key)
+      },
+      launchStage: () => {
+        console.warn("浏览器不支持launchStage跳转")
+
+      },
+      handleBack: () => {}
+    }
+  };
+  (function (para) {
+    var p = para.sdk_url,
+      n = para.name,
+      w = window,
+      d = document,
+      s = 'script',
+      x = null,
+      y = null;
+    if (typeof (w['csiiSDK202007']) !== 'undefined') {
+      return false;
+    }
+    w['csiiSDK202007'] = n;
+    w[n] = w[n] || function (a) {
+      return function () {
+        (w[n]._q = w[n]._q || []).push([a, arguments]);
+      }
+    };
+    var ifs = ['track', 'quick', 'register', 'registerPage', 'registerOnce', 'trackSignup', 'trackAbtest',
+      'setProfile', 'setOnceProfile', 'appendProfile', 'incrementProfile', 'deleteProfile', 'unsetProfile',
+      'identify', 'login', 'logout', 'trackLink', 'clearAllRegister', 'getAppStatus'
+    ];
+    for (var i = 0; i < ifs.length; i++) {
+      w[n][ifs[i]] = w[n].call(null, ifs[i]);
+    }
+    if (!w[n]._t) {
+      x = d.createElement(s), y = d.getElementsByTagName(s)[0];
+      x.async = 1;
+      x.src = p;
+      x.setAttribute('charset', 'UTF-8');
+      w[n].para = para;
+      y.parentNode.insertBefore(x, y);
+    }
+  })({
+    sdk_url: 'js/sensorsdata.min.js',
+    heatmap_url: 'js/heatmap.min.js',
+    name: 'csii',
+    // server_url: 'http://30.114.224.84:8090/collect/analyseCollectData.action?app_id=APP1&token=*',
+    server_url: '/collect/analyseCollectData.action?app_id=APP1&token=*',
+    use_client_time: false,
+    send_type: "ajax",
+    // heatmap: {
+    //   clickmap: 'not_collect',
+    //   scroll_notice_map: 'not_collect',
+    // },
+    // is_track_single_page: true
+    show_log: true, // 设置为true 在控制台显示发送的数据  false 不显示
+  });
+  // csii.quick('autoTrack');
+</script>
+<script src="https://cdn.bootcdn.net/ajax/libs/vConsole/3.3.4/vconsole.min.js"></script>
+  <!-- <script>
+    var vConsole = new VConsole()
+  </script> -->
+
+<body>
+  <noscript>
+    <strong>We're sorry but example_project doesn't work properly without JavaScript enabled. Please enable it to
+      continue.</strong>
+  </noscript>
+  <div id="app"></div>
+  <!-- built files will be auto injected -->
+</body>
+
+</html>

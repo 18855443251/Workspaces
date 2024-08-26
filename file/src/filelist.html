@@ -1,0 +1,60 @@
+<!--
+ * @Author: your name
+ * @Date: 2021-11-11 10:53:37
+ * @LastEditTime: 2022-06-21 16:53:32
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: \transfer\static\filelist.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File List</title>
+</head>
+
+<body>
+    <a
+        href="http://csmbk.jnbank.cn:18090/sunecmMapping/SunECMDM/servlet/getFile?3z6Ii77vN31kb0QxNYcwyBuLGDu9aGbHsO3mHtlp9OxDLHP9Jy2cvwoTFocn33M2nnWC+HG4O0DFfETWpCU/djxJ27zEKQUiGwJzt/vWZSGDeyIvpVTD7osav0G2pZzdDJWZnaeYswRNJiUuTr3Ivs7RAX/3YqwJbb5bSSPjL34wgf1Im82iFzRWuAUGL8eUjougRCXnvAhtGWd47C734fIhR6S2xl6/2VtVRdCaBA+cukKWB8rEkA==">node
+        tgz href</a>
+    <ul id="files">
+    </ul>
+</body>
+<!-- <script src="http://30.114.90.41:7772/vConsole.js"></script> -->
+<script>
+    //   var vConsole = new VConsole()
+    window.onload = () => {
+        let fileList = 'fileListHere'
+        fileList.forEach(file => {
+            let fLi = document.createElement('li')
+            fLi.innerText = file
+            fLi.style.color = "skyblue"
+            fLi.onclick = () => {
+                console.log(123);
+                let xhr = new XMLHttpRequest()
+                // 修改为本机IP
+                xhr.open('GET', 'http://192.168.50.183:7770/' + file)
+                xhr.send()
+                xhr.responseType = 'blob'
+                xhr.onreadystatechange = function () {
+                    var blob
+                    if (xhr.readyState == 4 && xhr.status == 200) {
+                        blob = new Blob([this.response])
+                        var aa = document.createElement('a')
+                        aa.href = URL.createObjectURL(blob)
+                        aa.download = file
+                        aa.style.display = 'none'
+                        document.body.appendChild(aa)
+                        aa.click()
+                    }
+                }
+            }
+            document.getElementById('files').appendChild(fLi)
+        })
+    }
+</script>
+
+</html>

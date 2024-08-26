@@ -1,0 +1,14 @@
+{
+    "brown": {
+        "fontColor": "#a67342",
+        "bgColor": "#fdf8f1",
+        "tabBgColor": "#cf9e6f",
+        "linearGradient": "linear-gradient(to bottom, #ffe2c6, #ffffff)",
+        "searchIcon": "./imgs/search.png",
+        "bgImg": "./assets/img/theme/brown/bgImg.png"
+    },
+    "blue": {
+        "fontColor": "#0077e6",
+        "bgColor": "#fff"
+    }
+}
