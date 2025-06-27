@@ -167,4 +167,10 @@ export default [
     component: () =>
       import(/* webpackChunkName: "fenye" */ "@/views/example/example29.vue"),
   },
+  {
+    name: "example30",
+    path: "/example30",
+    component: () =>
+      import(/* webpackChunkName: "fenye" */ "@/views/example/example30.vue"),
+  },
 ];

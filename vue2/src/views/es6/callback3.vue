@@ -21,9 +21,9 @@ export default {
     };
   },
   created() {
-      // this.test('张三',()=>{
-      //     console.log('进来了')
-      // })
+    // this.test('张三',()=>{
+    //     console.log('进来了')
+    // })
     // const fn = () => {
     //  console.log('进来了')
     // };

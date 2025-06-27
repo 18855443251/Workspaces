@@ -23,8 +23,8 @@ export default {
   methods: {
     test1() {
       this.oldList.forEach((item, index, arr) => {
-         let obj=JSON.parse(JSON.stringify(item));//深拷贝不会改变原始数组oldList,不会改变arr
-        // let obj = item; //浅拷贝会改变原始数组oldList,也会改变arr
+        //  let obj=JSON.parse(JSON.stringify(item));//深拷贝不会改变原始数组oldList,不会改变arr
+        let obj = item; //浅拷贝会改变原始数组oldList,也会改变arr
         obj.value = index;
         obj.Bankname = "借记卡";
         // return obj //没有返回值不能这样写

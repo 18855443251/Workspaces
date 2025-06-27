@@ -18,9 +18,9 @@ export default {
     return {};
   },
   created() {
-    // this.test1();
+    this.test1();
     // this.test2();
-    this.test3();
+    // this.test3();
   },
   methods: {
     test1() {

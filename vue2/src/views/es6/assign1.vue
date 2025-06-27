@@ -26,6 +26,10 @@ export default {
       name: "李四",
       sex: "女",
     };
+    // 如果只是想将两个或多个对象的属性合并到一起，不改变原有对象的属性，可以用一个空的对象作为target对象。像下面这样：
+    let c = Object.assign({}, obj1, obj2);
+    console.log(c, "c");
+    console.log(obj1, "obj1新");
     const obj3 = { a: { b: 1 } };
     // 第一个参数是目标对象，后面的参数都是源对象。
     let a = Object.assign({}, obj1);
@@ -33,9 +37,7 @@ export default {
     // 没有同名的属性会直接复制到目标对象上，同名的属性后面的属性值会覆盖前面的同名属性值。
     let b = Object.assign(obj1, obj2);
     console.log(b, "b");
-    // 如果只是想将两个或多个对象的属性合并到一起，不改变原有对象的属性，可以用一个空的对象作为target对象。像下面这样：
-    let c = Object.assign({}, obj1, obj2);
-    console.log(c, "c");
+    console.log(obj1, "obj1");
     let f = Object.assign({}, obj1, obj3);
     console.log(f, "f");
     // 其他类型的值（即数值、字符串和布尔值）不在首参数，也不会报错。但是，除了字符串会以数组形式，拷贝入目标对象，其他值都不会产生效果。

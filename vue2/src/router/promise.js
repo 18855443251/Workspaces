@@ -6,7 +6,8 @@
  * @Description: In User Settings Edit
  * @FilePath: \vue\src\router\promise.js
  */
-
+const promise1 = () =>
+  import(/* webpackChunkName: "string" */ "@/views/promise/promise1");
 const promise4 = () =>
   import(/* webpackChunkName: "string" */ "@/views/promise/promise4");
 const promise5 = () =>
@@ -34,6 +35,11 @@ const await2 = () =>
 const await3 = () =>
   import(/* webpackChunkName: "string" */ "@/views/promise/await3");
 export default [
+  {
+    name: "promise1",
+    path: "/promise1",
+    component: promise1,
+  },
   {
     name: "promise4",
     path: "/promise4",

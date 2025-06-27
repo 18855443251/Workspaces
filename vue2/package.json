@@ -3,16 +3,19 @@
   "version": "1.0.0",
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
+    "build": "vue-cli-service build --report",
     "dev": "vue-cli-service build --watch"
   },
   "dependencies": {
     "axios": "^0.19.2",
     "clipboard": "^2.0.6",
     "core-js": "^3.6.5",
+    "dayjs": "^1.9.4",
+    "dsbridge": "^3.1.4",
     "echarts": "^4.8.0",
     "html2canvas": "^1.4.1",
     "mand-mobile": "^2.5.11",
+    "marked": "^4.3.0",
     "stylus-loader": "^8.1.0",
     "v-charts": "^1.19.0",
     "vue": "^2.6.11",

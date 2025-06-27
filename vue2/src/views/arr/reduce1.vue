@@ -22,8 +22,8 @@ export default {
     // this.test();
     // this.test1();
     // this.test2();
-    // this.test3();
-    this.test4();
+    this.test3();
+    // this.test4();
   },
   methods: {
     test() {
@@ -32,7 +32,7 @@ export default {
         console.log(pre, cur); //1 2
         return pre + cur;
       });
-      console.log(a); //10
+      // console.log(a); //10
     },
     test1() {
       var arr = [1, 2, 3]; //传入initialValue 会多递归一次
@@ -41,11 +41,12 @@ export default {
         console.log(pre, cur); //10 1
         return pre + cur;
       }, 10);
-      console.log(a);
+      // console.log(a);
     },
     test2() {
       var arr = [1, 2, 3];
       var pro = arr.reduce(function (pre, cur, index, arr) {
+        console.log(pre, cur);
         return pre * cur;
       });
       console.log(pro); //6

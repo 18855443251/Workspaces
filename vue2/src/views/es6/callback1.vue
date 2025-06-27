@@ -22,11 +22,11 @@ export default {
   },
   created() {
     // this.test1();
-    // this.test2();
+    this.test2();
     // this.test3({ name: "历史" }, (data) => {
     //   this.msg = data;
     // });
-    this.test4();
+    // this.test4();
   },
   methods: {
     test1() {

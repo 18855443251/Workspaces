@@ -23,7 +23,7 @@ export default {
     // this.test()
     // console.log(this.outer()); //20
     //调用
-    console.log(this.out());
+    this.out()
   },
   methods: {
     test() {
@@ -52,7 +52,7 @@ export default {
         return fn;
       }
       const fun = count();
-      console.log(fun)
+      // console.log(fun)
       fun()
     },
   },

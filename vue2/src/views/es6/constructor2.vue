@@ -38,7 +38,7 @@ export default {
       let fruits = this.isArray(this.fruits);
       console.log("fruits", fruits);
     },
-    // 所有数组的constructor()引用值都是 “[]”。
+    // 判断数组格式 所有数组的constructor()引用值都是 “[]”。
     isArray(myArray) {
       console.log("myArray", myArray.constructor);
       console.log(myArray.constructor === Array);

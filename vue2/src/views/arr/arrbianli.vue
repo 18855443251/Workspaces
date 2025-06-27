@@ -58,15 +58,15 @@ export default {
     };
   },
   created() {
-    // this.test1();
+    this.test1();
     // this.test3();
     // this.test4();
     // this.test5();
-    this.test6();
+    // this.test6();
   },
   methods: {
     // for of是对数值遍历的，不能遍历对象，可以遍历数组
-    // for in 遍历数组遍历的是索引
+    // for in 遍历数组遍历的是索引 遍历对象遍历的是key
     // for of 遍历数组遍历的是值
     // for…of 遍历获取的是对象的键值，for…in 获取的是对象的键名；
     //普通的for循环能使用break、continue、 return跳出循环
@@ -76,6 +76,7 @@ export default {
     // for in 遍历数组(数组里面的元素为任何数组类型都行)或是对象改变数组中的值原数组都会改变
     test1() {
       for (let key in this.obj1) {
+        console.log(this.obj1[key], "value");
         if (key == "age") {
           return;
         }

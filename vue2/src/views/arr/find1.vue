@@ -41,9 +41,9 @@ export default {
         { cityCode: "123", name: "赵四" },
       ];
       let newIndex =
-        arr.find((item) => {
+        (arr.find((item) => {
           return item.cityCode === "123";
-        }).name || {}; ////不满足条件会返回一个undefined,undefined.name会报错
+        }) || {}).name; ////不满足条件会返回一个undefined,undefined.name会报错
       console.log(newIndex, "newIndex"); //李四
     },
     //数组为空 不会进来findIndex

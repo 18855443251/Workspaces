@@ -85,6 +85,7 @@ import jilei from "./jilei.js";
 import secondRouter from "./secondRouter.js";
 import directives1 from "./directives1.js";
 import fileDown from "./fileDown.js";
+import window1 from "./window1.js";
 const routes = [
   {
     path: "/home",
@@ -235,10 +236,9 @@ const routes = [
     name: "typeof1",
     component: typeof1,
   },
-
   {
     path: "/",
-    redirect: "/home",
+    redirect: "/window1",
   },
   ...style,
   ...reg,
@@ -273,6 +273,7 @@ const routes = [
   ...secondRouter,
   ...directives1,
   ...fileDown,
+  ...window1,
   // ...table
   {
     path: "*",

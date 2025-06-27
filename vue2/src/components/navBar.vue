@@ -1,15 +1,17 @@
 <template>
-  <div class="title-area" :style="{backgroundColor:bgColor}">
+  <div class="title-area" :style="{ backgroundColor: bgColor }">
     <div class="title-left-box">
       <div class="title-left" @click="mpBarLeftBtnClick" v-if="leftImgUrl">
         <img :src="leftImgUrl" class="title-left-image" />
       </div>
     </div>
-    <div class="title-text">{{ title }}</div>
+    <div class="title-text" @click.stop="handleTitle">{{ title }}</div>
     <div class="title-right-box">
       <div class="title-right" @click="mpBarRightBtnClick">
         <img :src="rightImgUrl" class="title-right-image" v-if="rightImgUrl" />
-        <div v-if="rightTitle" :class="show?'title-right-text':'red'">{{ rightTitle }}</div>
+        <div v-if="rightTitle" :class="show ? 'title-right-text' : 'red'">
+          {{ rightTitle }}
+        </div>
       </div>
     </div>
   </div>
@@ -43,6 +45,12 @@ export default {
       default: "#fff",
     },
   },
+  data() {
+    return {
+      clickCount: 0, // 点击计数器
+      clickTimer: null, // 计时器用于判断点击间隔
+    };
+  },
   methods: {
     mpBarLeftBtnClick() {
       if (!this.isControlBack) {
@@ -52,6 +60,31 @@ export default {
     },
     mpBarRightBtnClick() {
       this.$emit("mpBarRightBtnClick");
+    },
+    // 点击标题
+    handleTitle() {
+      this.clickCount += 1;
+      // 如果点击了2次，触发 showVConsole
+      if (this.clickCount === 2) {
+        this.showVConsole();
+        this.clickCount = 0; // 触发后重置计数器
+        clearTimeout(this.clickTimer); // 清除计时器
+      }
+      this.$emit("handleTitle");
+    },
+    // 打开vConsole
+    showVConsole() {
+      if (window.vConsole === undefined) {
+        const script = document.createElement("script");
+        // https://cdn.jsdelivr.net/npm/vconsole@3/dist/vconsole.min.js
+        script.src = "./vConsole.js";
+        script.onload = () => {
+          window.vConsole = new window.VConsole();
+        };
+        document.head.appendChild(script);
+      } else {
+        window.vConsole.show();
+      }
     },
   },
   computed: {

@@ -14,8 +14,8 @@ export default {
     return {};
   },
   mounted() {
-    // this.test1();
-    this.test2();
+    this.test1();
+    // this.test2();
   },
   methods: {
     // 函数可以引用外部的变量和参数
@@ -23,7 +23,7 @@ export default {
       function outer() {
         const a = 1;
         function inner() {
-          console.log(a);
+          return a;
         }
         return inner;
       }
@@ -35,12 +35,12 @@ export default {
       function outer() {
         const a = 1;
         return function () {
-          console.log(a);
+          return a;
         };
       }
       const fn = outer();
-      console.log(fn);
-      fn();
+      console.log(fn());
+      // fn();
     },
   },
 };

@@ -8,7 +8,8 @@
 -->
 <template>
   <div>
-    <div @click="test">发送get请求</div>
+    <!-- 函数形式 -->
+    <div @click="test">跨域</div>
   </div>
 </template>
 
@@ -21,12 +22,17 @@ export default {
   },
   created() {},
   methods: {
-    async test() {
-      let a = await axios({
-        url: "http://localhost:3000/posts",
+    test() {
+      let a = axios({
+        url: "http://127.0.0.1:8889/students",
         method: "get",
+        headers:{
+            userId:'55012'
+        }
       });
-      console.log(a, "刚刚"); //axios返回的是一个promise对象
+      a.then((res) => {
+        console.log(res.headers, "和");
+      });
     },
   },
 };

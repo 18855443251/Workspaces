@@ -27,15 +27,15 @@ export default {
   methods: {
     test() {
       let a = axios({
-        url: "http://localhost:3000/posts",
+        url: "http://127.0.0.1:8888/students",
         method: "get",
-        params: {
-          id: "1",
-        },
+        // params: {
+        //   id: "1",
+        // },
       });
-      console.log(a,'刚刚')//返回的是一个promise对象
+      console.log(a, "刚刚"); //返回的是一个promise对象
       a.then((res) => {
-        console.log(res,'和');
+        console.log(res, "和");
       });
     },
     test2() {
