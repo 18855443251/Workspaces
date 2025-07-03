@@ -18,8 +18,8 @@ export default {
     };
   },
   created() {
-    // this.getData1();
-    this.doIt();
+    this.getData1();
+    // this.doIt();
   },
   methods: {
     doIt() {

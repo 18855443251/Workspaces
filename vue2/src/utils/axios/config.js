@@ -7,9 +7,8 @@
  * @FilePath: \src\utils\axios\config.js
  */
 export default {
- 
   // 基础url前缀
-  baseURL: '/test/',
+  baseURL: 'api',
   // `headers` 是即将被发送的自定义请求头
   headers: {
     'X-Requestedtest-Withtest': 'XMLHttpRequesttest',

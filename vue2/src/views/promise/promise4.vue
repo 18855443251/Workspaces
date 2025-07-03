@@ -21,22 +21,22 @@ export default {
   },
   created() {
     // 写法一
-    // let myPromise = new Promise(function (myResolve, myReject) {
-    //   let x = 0;
-    //   if (x == 0) {
-    //     myResolve("OK");
-    //   } else {
-    //     myReject("Error");
-    //   }
-    // });
-    // myPromise.then(
-    //   function (value) {
-    //     console.log(value);
-    //   },
-    //   function (error) {
-    //     console.log(error);
-    //   }
-    // );
+    let myPromise = new Promise(function (myResolve, myReject) {
+      let x = 0;
+      if (x == 0) {
+        myResolve("OK");
+      } else {
+        myReject("Error");
+      }
+    });
+    myPromise.then(
+      function (value) {
+        console.log(value);
+      },
+      function (error) {
+        console.log(error);
+      }
+    );
     // 写法二
     // let myPromise = new Promise((myResolve, myReject) => {
     //   let x = 0;
@@ -63,7 +63,7 @@ export default {
     //     console.log(err);
     //   });
     // 写法四
-    this.test1();
+    // this.test1();
   },
   methods: {
     test() {

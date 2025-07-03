@@ -18,7 +18,7 @@ export default {
     };
   },
   created() {
-    this.test1();
+    this.test();
   },
   methods: {
     test() {

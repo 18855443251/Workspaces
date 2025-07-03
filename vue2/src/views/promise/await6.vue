@@ -8,7 +8,7 @@
 -->
 <template>
   <div class="claneCache_view">
-    <div>{{name}}</div>
+    <div>{{ name }}</div>
   </div>
 </template>
 <script>
@@ -20,27 +20,24 @@ export default {
     };
   },
   created() {
-    // this.queryData().then((res) => {
-    //   console.log(res,'res'); //返回数据
-    // });
-    this.test();
+    this.queryData().then((res) => {
+      console.log(res, "res"); //返回数据
+    });
+    // this.test();
   },
   methods: {
+    // async写在函数前，返回一个promise对象，当返回值不是一个promise对象，会强制转为promise对象
     async queryData() {
-      var ret = await this.$axios.post("myIndex.do", {
-        userId: "35123",
+      var ret = await this.$axios.get("api/attrSpec/queryAttrSpec", {
+        attrCd: "activity_form",
       });
       return ret;
     },
     async test() {
-      var ret = await this.$axios
-        .post("myIndex.do", {
-          userId: "35123",
-        })
-        .then((res) => {
-          console.log(res); //返回数据
-        });
-        console.log(ret,'就')
+      var ret = await this.$axios.get("api/attrSpec/queryAttrSpec", {
+        attrCd: "activity_form",
+      });
+      console.log(ret, "就");
     },
   },
 };

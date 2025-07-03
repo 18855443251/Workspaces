@@ -28,9 +28,10 @@ export default {
   created() {
     this.$nextTick(() => {
       this.isShow = true;
+      // 水印
       gwm.creation({
         container: "#app-body",
-        txt: "江西·农商银行",
+        txt: "江西·农商银行1",
         width: 140,
         height: 90,
         x: 10,

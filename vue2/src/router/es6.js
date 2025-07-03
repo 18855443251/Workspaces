@@ -209,4 +209,16 @@ export default [
     component: () =>
       import(/* webpackChunkName: "fenye" */ "@/views/es6/instanceof1.vue"),
   },
+  {
+    name: "entries1",
+    path: "/entries1",
+    component: () =>
+      import(/* webpackChunkName: "fenye" */ "@/views/es6/entries1.vue"),
+  },
+  {
+    name: "fromEntries1",
+    path: "/fromEntries1",
+    component: () =>
+      import(/* webpackChunkName: "fenye" */ "@/views/es6/fromEntries1.vue"),
+  },
 ];

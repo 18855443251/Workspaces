@@ -9,6 +9,7 @@ import {
 let reqNum = 0 // 请求次数
 export function $axios(options) {
   return new Promise((resolve, reject) => {
+    console.log("当前页面路由", $router.currentRoute.fullPath)
     config.headers.orgNo = $store.state.userInfo.deptcode;
     config.headers.cifName = $store.state.userInfo.empid;
     config.headers.userId = $store.state.userInfo.empid;
@@ -37,7 +38,6 @@ export function $axios(options) {
         return Promise.reject(err)
       }
     )
-
     // response 拦截器
     instance.interceptors.response.use(
       (response) => {
@@ -65,7 +65,7 @@ export function $axios(options) {
         }
         if (axios.isCancel(err)) {
           //为了终结promise链 就是实际请求 不会走到.catch(rej=>{});这样就不会发生提示错误之类的了
-          return new Promise(() => {})
+          return new Promise(() => { })
         }
         if (err && err.response) {
           switch (err.response.status) {
@@ -124,6 +124,7 @@ export function $axios(options) {
     // 请求处理
     instance(options)
       .then((response) => {
+        resolve(response)
         let customErrorHandling = options.customErrorHandling
         if (response.status == '00000000' || (options.proxy && response.status == '0000')) {
           resolve(response)
@@ -166,7 +167,7 @@ export function fetchErrorhandling(data) {
     return
   }
   // 待线上配置完竞争力可删除下方判断（$router.indexRouter != '/competitive')）
-  if (($store.state.userInfo.position && positionObJ[$store.state.userInfo.position]&& positionObJ[this.$store.state.userInfo.position].includes("行长")) && $router.indexRouter != '/competitive') {
+  if (($store.state.userInfo.position && positionObJ[$store.state.userInfo.position] && positionObJ[this.$store.state.userInfo.position].includes("行长")) && $router.indexRouter != '/competitive') {
     return;
   }
   if (data.status == "dsb_connect_fail" || data.status == "esb_connect_fail" || data.status == "esb_status_fail") {

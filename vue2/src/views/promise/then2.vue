@@ -34,17 +34,17 @@ export default {
           return "3";
         })
         .then((value) => {
-          console.log(value, "第三个then"); //2
+          console.log(value, "第三个then"); //3
           return new Promise((resolve, reject) => {
             resolve("4");
           });
         })
         .then((value) => {
-          console.log(value, "第四个then"); //2
+          console.log(value, "第四个then"); //4
           throw "错误的";
         })
         .catch((error) => {
-          console.log(error);
+          console.log(error,'error');
         });
     },
   },

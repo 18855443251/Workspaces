@@ -23,7 +23,9 @@ export default {
       inputVal: "",
     };
   },
-  created() {},
+  created() {
+    console.log(...['apple','banana','orange']);
+  },
   mounted() {},
   methods: {},
 };

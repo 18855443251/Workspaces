@@ -32,21 +32,21 @@ export default {
     //   .catch((error) => {
     //     console.log(error, "error");
     //   });
-    // this.test3(true)
-    //   .then((value) => {
-    //     console.log(value, "value");
-    //   })
-    //   .catch((error) => {
-    //     console.log(error, "error");
-    //   });
-
-    this.test4()
+    this.test3(true)
       .then((value) => {
-        console.log(value);
+        console.log(value, "value");
       })
       .catch((error) => {
         console.log(error, "error");
       });
+
+    // this.test4()
+    //   .then((value) => {
+    //     console.log(value);
+    //   })
+    //   .catch((error) => {
+    //     console.log(error, "error");
+    //   });
   },
   methods: {
     // async写在函数前，返回一个promise对象，当返回值不是一个promise对象，会强制转为promise对象
@@ -71,7 +71,7 @@ export default {
         });
       }, 3000);
     },
-    async test4() {
+    test4() {
       // return Promise.resolve("成功");
       return Promise.reject("失败");
     },

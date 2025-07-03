@@ -37,12 +37,12 @@ module.exports = {
     // port:'8080',//端口默认8080 可以省略 http://localhost:8080/
     // host:'127.0.0.1',//http://127.0.0.1:8080/
     proxy: {
-      "/processss": {
-        target: "http://localhost:3000/processss", //
+      "/api": {
+        target: "http://135.127.33.33:31181", //
         ws: true,//是否代理websovket
         changeOrigin: true,//是否开启跨域
         pathRewrite: {
-          "^/processss": "", //代理的路径
+          "^/api": "", //代理的路径
         },
       },
     },

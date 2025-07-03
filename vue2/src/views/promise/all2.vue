@@ -24,7 +24,7 @@ export default {
       resolve("呆呆");
     }); //返回一个Promise对象，状态为resolved，值为"呆呆"
     promise3.then((value) => {
-      console.log(value);
+      console.log(value);//呆呆
     });
     Promise.all([promise1, promise2, promise3]).then((values) => {
       console.log(values); //[3, 42, '呆呆']

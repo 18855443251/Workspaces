@@ -18,9 +18,9 @@ export default {
     };
   },
   async created() {
-    let a1 = await this.test1();
-    let a2 = await this.test2(a1);
-    let a3 = await this.test3(a2);
+    let a1 = await this.test1();//1
+    let a2 = await this.test2(a1);//2
+    let a3 = await this.test3(a2);//3
     console.log(a3);
   },
   methods: {

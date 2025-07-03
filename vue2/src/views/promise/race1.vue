@@ -28,10 +28,10 @@ export default {
     let c=Promise.race([a1, a2, a3])
     Promise.race([a1, a2, a3])
       .then((result) => {
-        console.log(result);
+        console.log(result,'result');
       })
       .catch((err) => {
-        console.log(err);
+        console.log(err,'error');
       });
     // 于是他俩就会赛跑，如果5秒之内图片请求成功了，那么遍进入then方法，执行正常的流程。如果5秒钟图片还未成功返回，那么timeout就跑赢了，则进入catch，报出“图片请求超时”的信息。
     // Promise.race([this.requestImg(), this.timeout()])

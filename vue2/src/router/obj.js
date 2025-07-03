@@ -35,6 +35,8 @@ const obj18 = () =>
   import(/* webpackChunkName: "my" */ "@/views/obj/obj18.vue"); // 通讯录
 const obj19 = () =>
   import(/* webpackChunkName: "my" */ "@/views/obj/obj19.vue"); // 通讯录
+const hasOwnProperty1 = () =>
+  import(/* webpackChunkName: "my" */ "@/views/obj/hasOwnProperty1.vue"); // 通讯录
 export default [
   {
     name: "obj1",
@@ -130,5 +132,10 @@ export default [
     name: "obj19",
     path: "/obj19",
     component: obj19,
+  },
+  {
+    name: "hasOwnProperty1",
+    path: "/hasOwnProperty1",
+    component: hasOwnProperty1,
   }
 ];

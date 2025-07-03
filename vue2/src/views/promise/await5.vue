@@ -20,7 +20,10 @@ export default {
     };
   },
   created() {
-    this.test2();
+    this.test1(2).then((res) => {
+      this.name = res;
+    });
+    // this.test2();
   },
   methods: {
     test1(num) {
