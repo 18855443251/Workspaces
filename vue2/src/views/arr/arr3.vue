@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div>数组扁平化及去重</div>
+    <div>数组扁平化及去重 二维数组去重</div>
   </div>
 </template>
 <script>

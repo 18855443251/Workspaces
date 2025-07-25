@@ -26,7 +26,7 @@ import axiosPlugin from "./utils/axios";
 // axios.defaults.baseURL = "http://localhost:3000/processddd4";
 // Vue.prototype.$axios=axios 就可以通过this.$axios调用
 import "@/assets/ttf/font.css";
-// import "@/assets/css/common.less";
+import "@/assets/css/common.less";
 Vue.use(utils, {
   ...func,
 });

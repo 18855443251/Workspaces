@@ -31,4 +31,12 @@ export default [
         /* webpackChunkName: "fenye" */ "@/views/directives/directives4.vue"
       ),
   },
+  {
+    name: "directives5",
+    path: "/directives5",
+    component: () =>
+      import(
+        /* webpackChunkName: "fenye" */ "@/views/directives/directives5.vue"
+      ),
+  },
 ];

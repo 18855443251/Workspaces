@@ -42,7 +42,6 @@
     <!-- 合并对象 -->
     <div @click="jump('/assign1')">assign1合并对象和数组</div>
     <!-- 三目运算 -->
-    <div @click="jump('/calculation1')">三目运算</div>
     <div @click="jump('/pipeiImg')">匹配图片</div>
     <div @click="jump('/ref1')">ref使用</div>
     <div @click="jump('/useData1')">数据格式的取和用</div>

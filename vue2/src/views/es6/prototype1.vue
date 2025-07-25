@@ -1,11 +1,4 @@
-<!--
- * @Author: your name
- * @Date: 2021-08-20 15:29:38
- * @LastEditTime: 2021-08-25 10:04:36
- * @LastEditors: Please set LastEditors
- * @Description: In User Settings Edit
- * @FilePath: \vue\src\views\empty.vue
--->
+
 <template>
   <div class="claneCache_view"></div>
 </template>
@@ -26,7 +19,7 @@ export default {
     Star.prototype.sing = function () {
       console.log("唱歌");
     };
-    console.log(Star.prototype)
+    console.log(Star.prototype);
     const ldh = new Star("刘德华", 55);
     const zxy = new Star("张学友", 58);
     ldh.sing(); //调用

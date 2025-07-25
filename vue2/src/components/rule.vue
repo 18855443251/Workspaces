@@ -33,6 +33,9 @@ export default {
   data() {
     return {};
   },
+  mounted() {
+   
+  },
   methods: {
     // touchmove作用在哪个元素，就滑动哪个元素阻止浏览器滑动
     touchmove(e) {

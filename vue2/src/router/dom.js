@@ -104,10 +104,10 @@ export default [
       import(/* webpackChunkName: "date" */ "@/views/dom/dom16.vue"),
   },
   {
-    name: "dom17",
-    path: "/dom17",
+    name: "currentTarget",
+    path: "/currentTarget",
     component: () =>
-      import(/* webpackChunkName: "date" */ "@/views/dom/dom17.vue"),
+      import(/* webpackChunkName: "date" */ "@/views/dom/currentTarget.vue"),
   },
   {
     name: "dom18",

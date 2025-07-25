@@ -1,50 +1,75 @@
-<!--
- * @Author: your name
- * @Date: 2020-10-13 18:11:56
- * @LastEditTime: 2021-08-02 17:00:43
- * @LastEditors: Please set LastEditors
- * @Description:定时器
- * @FilePath: \vueDemo\src\views\string\match1.vue
--->
 <template>
   <div>
-    <div v-for="(item, index) in timeList" @click="test" :key="index">{{ item.time }}分{{item.time}}秒</div>
+    <!-- Fix display format using computed property -->
+    <div v-for="(item, index) in timeList" @click="test" :key="index">
+      {{ formattedTime(item.time) }}
+    </div>
   </div>
 </template>
 
 <script>
 export default {
-  name: "home",
+  name: "timeout1",
   data() {
     return {
-      timer: null, //定时器
-      timeList: [{ time: "1" }],
+      timer: null,
+      timeList: [{ time: 0 }], // Start from 0 seconds
     };
   },
   created() {
-    // timer 设置timer为null只是将timer指向null 只是清除timer的内存
-    if (this.timer) {
-      clearInterval(this.timer);//clearInterval才是真正的清空定时器
-    }
-    this.timer = setInterval(() => {
-      for (let item of this.timeList) {
-        item.time++;
-        console.log(item.time);
-      }
-    }, 1000);
+    this.startTimer();
+  },
+  activated() {
+    console.log(this.$route.meta, "activated");
+    // if (this.$route.meta.refresh) {
+    //   this.$route.meta.refresh = false;
+    this.startTimer();
+    // }
   },
   methods: {
+    startTimer() {
+      console.log("activated2");
+      if (this.timer) clearInterval(this.timer);
+      this.timer = setInterval(() => {
+        this.timeList.forEach((item) => {
+          item.time++;
+        });
+      }, 1000);
+    },
+    formattedTime(seconds) {
+      console.log(seconds);
+      // Convert seconds to mm:ss format
+      const mins = Math.floor(seconds / 60);
+      const secs = seconds % 60;
+      return `${mins.toString().padStart(2, "0")}:${secs
+        .toString()
+        .padStart(2, "0")}`;
+    },
+    stopTimer() {
+      if (this.timer) {
+        clearInterval(this.timer);
+        this.timer = null; // Critical: nullify reference
+      }
+    },
     test() {
       this.jump("/timeout2");
     },
   },
-  // beforeDestroy(){
-  //   clearInterval(this.timer);
+  // <keep-alive> 缓存机制影响
+  // 如果当前组件被包裹在 Vue 的 <keep-alive> 标签内，组件离开时不会触发 beforeDestroy 生命周期钩子，而是进入 deactivated 状态。
+  // beforeDestroy() {
+  //   console.log("beforeDestroy");
+  //   this.stopTimer();
   // },
-  destroyed() {
-    clearInterval(this.timer);
+  // beforeRouteLeave函数体内可以获取到this实例
+  beforeRouteLeave(to, from, next) {
+    console.log("beforeRouteLeave");
+    this.stopTimer();
+    next(); // 必须调用 next() 继续导航
+  },
+  // 1. 添加 deactivated 钩子处理 keep-alive 场景
+  deactivated() {
+    this.stopTimer();
   },
 };
 </script>
-
-<style scoped></style>

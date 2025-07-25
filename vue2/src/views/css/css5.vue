@@ -57,5 +57,5 @@ export default {
   background-color: blue;
 }
 /* 设置滚动条不显示 */
-::-webkit-scrollbar {display:none}
+/* ::-webkit-scrollbar {display:none} */
 </style>

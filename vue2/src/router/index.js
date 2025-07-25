@@ -29,8 +29,6 @@ import formatNum from "@/views/num/formatNum";
 // 金额处理
 import formatMoney from "@/views/money/formatMoney";
 
-// 三目运算
-import calculation1 from "@/views/calculation/calculation1";
 // 匹配图片
 import pipeiImg from "@/views/imgDeal/pipeiImg";
 import daoruImg from "@/views/imgDeal/daoruImg";
@@ -50,7 +48,6 @@ import watch3 from "@/views/watch/watch3"; //引导页
 import test from "@/views/test";
 import test1 from "@/views/test1";
 import typeof1 from "@/views/typeof1";
-import creditSituation from "@/views/creditSituation/creditSituation"; //引导页
 import message from "@/views/messageManage/message";
 import style from "./style.js";
 import reg from "./reg.js";
@@ -141,11 +138,6 @@ const routes = [
     component: formatMoney,
   },
   {
-    path: "/calculation1",
-    name: "calculation1",
-    component: calculation1,
-  },
-  {
     path: "/daoruImg",
     name: "daoruImg",
     component: daoruImg,
@@ -195,11 +187,6 @@ const routes = [
     path: "/guide",
     name: "guide",
     component: guide,
-  },
-  {
-    path: "/creditSituation",
-    name: "creditSituation",
-    component: creditSituation,
   },
   {
     path: "/VxMobile",
@@ -285,15 +272,17 @@ const router = new VueRouter({
   routes,
 });
 // router.beforeEach((to, from, next) => {
+// console.log(to.query)
+// console.log(router.indexRouter = to.path;)
 //   // 跳转router1的时候判断满足条件直接跳转登录
 //   // let a = to.matched.some((item) => {
-//   //   return item.path == "/router1";
+//   //   return item.path == "/routerP1";
 //   // });
 //   console.log(to.matched, "matched");
 //   let a = to.meta.isLogin;
 //   console.log(to.meta, "meta");
 //   if (a) {
-//     next("/login");
+//     next({ path: '/login', query: { redirect: to.fullPath } });
 //   } else {
 //     next();
 //   }

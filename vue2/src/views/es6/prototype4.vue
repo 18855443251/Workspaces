@@ -1,11 +1,4 @@
-    <!--
- * @Author: your name
- * @Date: 2020-10-13 18:11:56
- * @LastEditTime: 2021-08-02 16:48:14
- * @LastEditors: Please set LastEditors
- * @Description:业务早报
- * @FilePath: \vueDemo\src\views\reg\replace1.vue
-    -->
+
 <template>
   <div>
     <div>JavaScript prototype 属性允许您为对象构造器添加新属性：</div>

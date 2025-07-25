@@ -1,5 +1,6 @@
 <template>
   <div>
+    <!-- 改变颜色指令 -->
     <h1 v-color="color1">指令的值1测试</h1>
     <h1 v-color="color2">指令的值2测试</h1>
     <div @click="test">改变颜色</div>

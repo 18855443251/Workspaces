@@ -27,6 +27,7 @@ export default {
   mounted() {
     console.log("第一种获取方式：", this.$route.params); //{username: '张三', age: '18'}
   },
+  // beforeRouteEnter函数体内获取不到this实例
   beforeRouteEnter(to, from, next) {
     if (to.params) {
       console.log("第三种获取方式：", to.params); //{username: '张三', age: '18'}

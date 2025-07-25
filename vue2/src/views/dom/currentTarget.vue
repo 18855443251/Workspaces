@@ -8,9 +8,9 @@
     -->
 <template>
   <div>
-    <div id="A">
+    <div id="A" class="test">
       我是A
-      <div id="B">我是B</div>
+      <div id="B" class="test1">我是B</div>
     </div>
   </div>
 </template>
@@ -31,8 +31,9 @@ export default {
     };
   },
   mounted() {
-    this.test1();
-    // this.test2();
+    // target点击谁就是谁  currentTarge谁添加点击事件就是谁
+    // this.test1();
+    this.test2();
   },
   methods: {
     test1() {
@@ -43,9 +44,9 @@ export default {
         // 点击b时，target为b，但currentTarget仍为 a
         //currentTarget始终是监听事件者，即 直接调用addEventlistener那个节点
         // 而target是事件的真正发出者， 即触发事件的节点，在click事件中就是被点击的节点。
-        console.log(this)
-        console.log(e.target);
-        console.log(e.currentTarget);
+        console.log(this, "this");
+        console.log(e.target, "target");
+        console.log(e.currentTarget, "currentTarget");
         console.log(this === e.currentTarget);
         console.log(this === e.target);
       }
@@ -59,8 +60,9 @@ export default {
         // 点击b时，target为b，但currentTarget仍为 a
         //currentTarget始终是监听事件者，即 直接调用addEventlistener那个节点
         // 而target是事件的真正发出者， 即触发事件的节点，在click事件中就是被点击的节点。
-        console.log(e.target);
-        console.log(e.currentTarget);
+        console.log(this, "this");
+        console.log(e.target, "target");
+        console.log(e.currentTarget, "currentTarget");
         console.log(this === e.currentTarget);
         console.log(this === e.target);
       }
@@ -71,4 +73,12 @@ export default {
 </script>
 
 <style scoped>
+.test {
+  height: 200px;
+  background: red;
+}
+.test1 {
+  height: 50px;
+  background: rgb(114, 105, 201);
+}
 </style>

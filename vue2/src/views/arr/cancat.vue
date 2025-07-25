@@ -1,8 +1,9 @@
 <template>
   <div>
-    <div>arr1:{{arr1}}</div>
-    <div>arr2:{{arr2}}</div>
-    <div>arr3:{{arr3}}</div>
+    <div>concat方法</div>
+    <div>arr1:{{ arr1 }}</div>
+    <div>arr2:{{ arr2 }}</div>
+    <div>arr3:{{ arr3 }}</div>
   </div>
 </template>
 

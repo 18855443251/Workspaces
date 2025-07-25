@@ -10,6 +10,10 @@ export default [
   {
     name: "timeout1",
     path: "/timeout1",
+    meta: {
+      keepAlive: true, // 需要缓存
+      refresh: true,
+    },
     component: () =>
       import(/* webpackChunkName: "rep" */ "@/views/timeout/timeout1.vue"),
   },

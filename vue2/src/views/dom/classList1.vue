@@ -1,13 +1,6 @@
-    <!--
- * @Author: your name
- * @Date: 2020-10-13 18:11:56
- * @LastEditTime: 2021-08-20 09:02:33
- * @LastEditors: Please set LastEditors
- * @Description:client
- * @FilePath: \vueDemo\src\views\reg\replace1.vue
-    -->
 <template>
   <div>
+    <!-- h获取类名 -->
     <p class="test blue mr">标签1</p>
     <p class="test blue">标签2</p>
   </div>

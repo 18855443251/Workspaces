@@ -14,7 +14,7 @@
 
 <script>
 export default {
-  name: "home",
+  name: "timeout2",
   data() {
     return {};
   },

@@ -1,13 +1,7 @@
-<!--
- * @Author: your name
- * @Date: 2021-08-12 15:06:34
- * @LastEditTime: 2022-08-04 10:39:21
- * @LastEditors: Please set LastEditors
- * @Description: In User Settings Edit
- * @FilePath: \vue\src\views\VxMobile.vue
--->
+
 <template>
   <div class="claneCache_view">
+    <!-- 水平 垂直居中 -->
     <div class="tess">
       <img src="@/assets/img/close.png" class="row-img" />
     </div>
@@ -26,12 +20,14 @@ export default {
 .tess {
   width: 200px;
   height: 200px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   border: 1px solid rgb(16, 159, 80);
+  position: relative;
 }
-.row-img{
-    background: red;
+.row-img {
+  background: red;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 </style>

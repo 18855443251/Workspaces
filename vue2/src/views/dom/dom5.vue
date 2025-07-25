@@ -1,11 +1,3 @@
-    <!--
- * @Author: your name
- * @Date: 2020-10-13 18:11:56
- * @LastEditTime: 2021-08-20 09:02:33
- * @LastEditors: Please set LastEditors
- * @Description:client
- * @FilePath: \vueDemo\src\views\reg\replace1.vue
-    -->
 <template>
   <div>
     <button id="myBtn">试一试</button>
@@ -45,9 +37,9 @@ export default {
     // 失去焦点转变成大写
     // target就表示触发事件的元素。
     myFunction($event) {
-      // console.log($event.target.value)
-      // console.log($event.target.id)
-      // console.log($event.target.offsetHeight)
+      console.log($event.target.value)
+      console.log($event.target.id)
+      console.log($event.target.offsetHeight)
       console.log($event.currentTarget)
       // var x = document.getElementById("fname");
       // x.value = x.value.toUpperCase();

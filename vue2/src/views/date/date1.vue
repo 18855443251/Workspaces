@@ -19,8 +19,9 @@ export default {
     return {};
   },
   created() {
+    // 得到指定月最后一天是几号
     console.log(this.getCurrMonthLastDay(2023, 2));
-     console.log(this.getPervMonthLastDay(2024, 2));
+    console.log(this.getPervMonthLastDay(2024, 2));
   },
   methods: {},
 };

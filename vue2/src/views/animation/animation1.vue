@@ -1,3 +1,4 @@
+<!--江西预约取号跑马灯组件-->
 <template>
   <div class="claneCache_view">
     <noticeBar :scrollable="true" :animationDuration="animationDuration">

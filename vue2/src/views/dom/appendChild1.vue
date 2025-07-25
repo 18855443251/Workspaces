@@ -1,15 +1,8 @@
-    <!--
- * @Author: your name
- * @Date: 2020-10-13 18:11:56
- * @LastEditTime: 2021-08-20 09:02:33
- * @LastEditors: Please set LastEditors
- * @Description:client
- * @FilePath: \vueDemo\src\views\reg\replace1.vue
-    -->
 <template>
   <div>
+    <!-- 在指定元素节点的最后一个子节点之后添加节点 -->
     <ul>
-      <li>1</li>
+      <li></li>
     </ul>
   </div>
 </template>

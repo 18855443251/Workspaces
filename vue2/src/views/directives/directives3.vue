@@ -1,5 +1,6 @@
 <template>
   <div class="main">
+    <!-- loading加载指令 -->
     <div class="box" v-loading="isLoading">
       <ul>
         <li v-for="item in list" :key="item.id" class="news">

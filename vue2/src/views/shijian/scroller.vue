@@ -19,6 +19,13 @@ export default {
     return {};
   },
   mounted() {
+    // 回到顶部
+    //  let scrollTop =
+    //     window.pageYOffset ||
+    //     document.documentElement.scrollTop ||
+    //     document.body.scrollTop ||
+    //     0;
+    //   document.body.scrollTop = document.documentElement.scrollTop = 0;
     this.test();
   },
   methods: {

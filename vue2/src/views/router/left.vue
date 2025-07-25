@@ -17,12 +17,20 @@
 <script>
 export default {
   name: "left",
+  props: {
+    username: {
+      type: String,
+      default: "",
+    },
+  },
   data() {
     return {
       redirect: "",
     };
   },
-  mounted() {},
+  mounted() {
+    console.log(this.username)
+  },
 
   methods: {
     test() {

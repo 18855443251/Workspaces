@@ -1,19 +1,14 @@
 <template>
   <div @touchstart="touchstart" @touchmove="touchmove" @touchend="touchend">
+   
     <transition :name="transitionName">
-      <!-- :include="['home', 'lifeCycle1']" -->
-      <keep-alive :include="$store.state.keepAlive">
-        <router-view class="router-view"></router-view>
-      </keep-alive>
-    </transition>
-    <!-- <transition :name="transitionName">
       <keep-alive>
         <router-view v-if="$route.meta.keepAlive"></router-view>
       </keep-alive>
     </transition>
     <transition :name="transitionName">
       <router-view v-if="!$route.meta.keepAlive"></router-view>
-    </transition> -->
+    </transition>
     <!-- <mp-mask :show="$store.state.overLayShow"></mp-mask> -->
   </div>
 </template>

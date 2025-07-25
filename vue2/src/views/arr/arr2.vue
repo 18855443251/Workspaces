@@ -2,7 +2,7 @@
   <div>
     <!-- <div>{{ newArr }}</div> -->
     <!-- <input id="demo" type="text" v-model="name" /> -->
-    <div>就很好</div>
+    <div>数组去重</div>
   </div>
 </template>
 
