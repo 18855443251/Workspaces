@@ -1,5 +1,6 @@
 <template>
   <div class="contain" ref="myScroller">
+    <!-- 高亮显示 -->
     <div class="content_container" v-for="(item, index) in list" :key="index">
       <span
         class="title"

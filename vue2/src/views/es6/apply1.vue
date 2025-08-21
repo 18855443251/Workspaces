@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div>let</div>
+    <div>apply</div>
   </div>
 </template>
 

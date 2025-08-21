@@ -1,0 +1,4 @@
+# docker client sending context ignore files
+/node_modules
+/src
+/public

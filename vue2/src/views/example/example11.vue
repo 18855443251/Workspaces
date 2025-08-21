@@ -1,11 +1,3 @@
-<!--
- * @Author: your name
- * @Date: 2020-10-13 18:11:56
- * @LastEditTime: 2021-09-13 15:40:30
- * @LastEditors: Please set LastEditors
- * @Description: 点击复制
- * @FilePath: \vueDemo\src\views\arr\hebingArr.vue
--->
 <template>
   <div>
     <h6>点击复制</h6>

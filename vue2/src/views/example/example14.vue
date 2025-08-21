@@ -1,11 +1,4 @@
-<!--
- * @Author: your name
- * @Date: 2022-03-15 16:47:37
- * @LastEditTime: 2022-06-15 15:56:38
- * @LastEditors: Please set LastEditors
- * @Description: In User Settings Edit
- * @FilePath: \root\bank\src\views\appCenter\appCenter.vue
--->
+
 <template>
   <div ref="main_view">
     <!-- 导航头 -->

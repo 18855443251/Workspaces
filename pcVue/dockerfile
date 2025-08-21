@@ -1,0 +1,18 @@
+# 设置基础镜像，替换成省份自己上传的镜像
+#FROM yd-artifact.srdcloud.cn/hn_zxyx-snapshot-docker-local/centos7-nginx:latest
+FROM nginx:latest
+RUN rm -rf /usr/share/nginx/html/*
+ADD sand-table-web-pc.tar.gz /usr/share/nginx/html
+# portal
+RUN mv /usr/share/nginx/html/sand-table-web-pc/*  /usr/share/nginx/html
+
+EXPOSE 32500
+
+#RUN rm /etc/nginx/conf.d/default.conf
+#RUN rm -rf /usr/share/nginx/html/WEB-INF
+#用本地的 default.conf 配置来替换nginx镜像里的默认配置
+#ADD config/default.conf /etc/nginx/conf.d/default.conf.template
+ADD config/default.conf /etc/nginx/conf.d/default.conf
+#ADD config/startup.sh /etc/nginx/conf.d/startup.sh
+ENV LANG=en_US.UTF-8
+#CMD chmod 777 /etc/nginx/conf.d/startup.sh  && sh /etc/nginx/conf.d/startup.sh
