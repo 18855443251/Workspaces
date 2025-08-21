@@ -8,14 +8,10 @@ import filters from '@/filters'
 import mixins from "@/mixins";
 import '@/assets/styles/icons/fulldesign_icons.css';
 import '@/assets/styles/fonts/font.css'
-// import '@/assets/icons'
-import { Table, Pagination, ConfigProvider } from 'ant-design-vue'
+import Antd from 'ant-design-vue'
 import 'ant-design-vue/dist/antd.css'
 import zhCN from 'ant-design-vue/lib/locale/zh_CN'
-Vue.use(Table)
-Vue.use(Pagination)
-Vue.use(ConfigProvider)
-
+Vue.use(Antd)
 // 注册过滤器
 Object.keys(filters).forEach((k) => {
   Vue.filter(k, filters[k])

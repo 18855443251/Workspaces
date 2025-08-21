@@ -57,7 +57,7 @@
 <script>
 import dayjs from "dayjs";
 import myPage from "@/components/myPage";
-import { queryGridPageList } from "@/api/customerSandbox";
+import { queryGridPageList } from "@/api/tree";
 export default {
   name: "gridTable",
   components: { myPage },

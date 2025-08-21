@@ -1,13 +1,11 @@
 <template>
   <div class="main-div">
-    <svg-icon icon-class="user" :width="12" :height="12"> </svg-icon>
-    <!-- <img
+    <img
       src="@/assets/images/1.png"
       alt="Base64 Image"
       @click="enlargeImage"
       style="cursor: pointer"
-    /> -->
-
+    />
     <div v-if="isOverlayActive" class="overlay" @click.self="closeOverlay">
       <div class="zoom-controls">
         <button @click.stop="zoomIn">+</button>

@@ -1,0 +1,3173 @@
+[
+    {
+        "nodeId": "461000000000000001724041",
+        "parentId": null,
+        "name": "海南",
+        "fullName": "海南",
+        "levelNumber": 1,
+        "levelName": "省",
+        "children": [
+            {
+                "nodeId": "461000000000000001724037",
+                "parentId": "461000000000000001724041",
+                "name": "万宁市",
+                "fullName": "万宁市",
+                "levelNumber": 2,
+                "levelName": "市",
+                "children": [
+                    {
+                        "nodeId": "461000000000000291708068",
+                        "parentId": "461000000000000001724037",
+                        "name": "万城镇",
+                        "fullName": "万宁市万城镇",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000291710861",
+                        "parentId": "461000000000000001724037",
+                        "name": "三更罗镇",
+                        "fullName": "万宁市三更罗镇",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000291708128",
+                        "parentId": "461000000000000001724037",
+                        "name": "东澳镇",
+                        "fullName": "万宁市东澳镇",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000291708758",
+                        "parentId": "461000000000000001724037",
+                        "name": "兴隆农场",
+                        "fullName": "万宁市兴隆农场",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000291708797",
+                        "parentId": "461000000000000001724037",
+                        "name": "北大镇",
+                        "fullName": "万宁市北大镇",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000291708822",
+                        "parentId": "461000000000000001724037",
+                        "name": "南桥镇",
+                        "fullName": "万宁市南桥镇",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000291708158",
+                        "parentId": "461000000000000001724037",
+                        "name": "后安镇",
+                        "fullName": "万宁市后安镇",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000291708815",
+                        "parentId": "461000000000000001724037",
+                        "name": "和乐镇",
+                        "fullName": "万宁市和乐镇",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000291709439",
+                        "parentId": "461000000000000001724037",
+                        "name": "大茂镇",
+                        "fullName": "万宁市大茂镇",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000291708124",
+                        "parentId": "461000000000000001724037",
+                        "name": "山根镇",
+                        "fullName": "万宁市山根镇",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000291708173",
+                        "parentId": "461000000000000001724037",
+                        "name": "礼纪镇",
+                        "fullName": "万宁市礼纪镇",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000291708890",
+                        "parentId": "461000000000000001724037",
+                        "name": "长丰镇",
+                        "fullName": "万宁市长丰镇",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000291708114",
+                        "parentId": "461000000000000001724037",
+                        "name": "龙滚镇",
+                        "fullName": "万宁市龙滚镇",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    }
+                ],
+                "isLeaf": false
+            },
+            {
+                "nodeId": "461000000000000001724027",
+                "parentId": "461000000000000001724041",
+                "name": "三亚市",
+                "fullName": "三亚市",
+                "levelNumber": 2,
+                "levelName": "市",
+                "children": [
+                    {
+                        "nodeId": "461000000000000291774387",
+                        "parentId": "461000000000000001724027",
+                        "name": "吉阳区",
+                        "fullName": "海南三亚市吉阳区",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000292298578",
+                        "parentId": "461000000000000001724027",
+                        "name": "吉阳区南新农场",
+                        "fullName": "海南三亚市吉阳区南新农场",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000291763568",
+                        "parentId": "461000000000000001724027",
+                        "name": "天涯区",
+                        "fullName": "海南三亚市天涯区",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000292197754",
+                        "parentId": "461000000000000001724027",
+                        "name": "天涯区南岛农场",
+                        "fullName": "海南三亚市天涯区南岛农场",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000291955515",
+                        "parentId": "461000000000000001724027",
+                        "name": "天涯区立才农场",
+                        "fullName": "海南三亚市天涯区立才农场",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000291936192",
+                        "parentId": "461000000000000001724027",
+                        "name": "天涯区育才镇",
+                        "fullName": "海南三亚市天涯区育才镇",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000291793603",
+                        "parentId": "461000000000000001724027",
+                        "name": "崖州区",
+                        "fullName": "海南三亚市崖州区",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000291948562",
+                        "parentId": "461000000000000001724027",
+                        "name": "崖州区南滨农场",
+                        "fullName": "海南三亚市崖州区南滨农场",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000292182735",
+                        "parentId": "461000000000000001724027",
+                        "name": "崖州区南雅农场",
+                        "fullName": "海南三亚市崖州区南雅农场",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": true
+                    },
+                    {
+                        "nodeId": "461000000000000292288825",
+                        "parentId": "461000000000000001724027",
+                        "name": "海棠区",
+                        "fullName": "海南三亚市海棠区",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000291842617",
+                        "parentId": "461000000000000001724027",
+                        "name": "海棠区南田农场",
+                        "fullName": "海南三亚市海棠区南田农场",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    }
+                ],
+                "isLeaf": false
+            },
+            {
+                "nodeId": "461000000000000003247274",
+                "parentId": "461000000000000001724041",
+                "name": "三沙市",
+                "fullName": "三沙市",
+                "levelNumber": 2,
+                "levelName": "市",
+                "children": [
+                    {
+                        "nodeId": "461000000000000291916362",
+                        "parentId": "461000000000000003247274",
+                        "name": "西沙区",
+                        "fullName": "三沙市西沙区",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    }
+                ],
+                "isLeaf": false
+            },
+            {
+                "nodeId": "461000000000000001724033",
+                "parentId": "461000000000000001724041",
+                "name": "东方市",
+                "fullName": "东方市",
+                "levelNumber": 2,
+                "levelName": "市",
+                "children": [
+                    {
+                        "nodeId": "461000000000000291627343",
+                        "parentId": "461000000000000001724033",
+                        "name": "三家镇",
+                        "fullName": "东方市三家镇",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000291632209",
+                        "parentId": "461000000000000001724033",
+                        "name": "东河镇",
+                        "fullName": "东方市东河镇",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000291633504",
+                        "parentId": "461000000000000001724033",
+                        "name": "东河镇天安乡",
+                        "fullName": "海南东方市东河镇天安乡",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000291610826",
+                        "parentId": "461000000000000001724033",
+                        "name": "八所镇",
+                        "fullName": "东方市八所镇",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000291625840",
+                        "parentId": "461000000000000001724033",
+                        "name": "华侨农场",
+                        "fullName": "东方市华侨农场",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000291621349",
+                        "parentId": "461000000000000001724033",
+                        "name": "四更镇",
+                        "fullName": "东方市四更镇",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000291631505",
+                        "parentId": "461000000000000001724033",
+                        "name": "大田镇",
+                        "fullName": "东方市大田镇",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000321264324",
+                        "parentId": "461000000000000001724033",
+                        "name": "天安乡",
+                        "fullName": "海南东方市天安乡",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000291633519",
+                        "parentId": "461000000000000001724033",
+                        "name": "感城镇",
+                        "fullName": "海南东方市感城镇",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000291619590",
+                        "parentId": "461000000000000001724033",
+                        "name": "新龙镇",
+                        "fullName": "东方市新龙镇",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000291638496",
+                        "parentId": "461000000000000001724033",
+                        "name": "板桥镇",
+                        "fullName": "东方市板桥镇",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000291627325",
+                        "parentId": "461000000000000001724033",
+                        "name": "江边乡",
+                        "fullName": "东方市江边乡",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000291622025",
+                        "parentId": "461000000000000001724033",
+                        "name": "红泉农场",
+                        "fullName": "东方市红泉农场",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    }
+                ],
+                "isLeaf": false
+            },
+            {
+                "nodeId": "461000000000000001724031",
+                "parentId": "461000000000000001724041",
+                "name": "临高县",
+                "fullName": "临高县",
+                "levelNumber": 2,
+                "levelName": "市",
+                "children": [
+                    {
+                        "nodeId": "461000000000000291655141",
+                        "parentId": "461000000000000001724031",
+                        "name": "东英镇",
+                        "fullName": "临高县东英镇",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000291655094",
+                        "parentId": "461000000000000001724031",
+                        "name": "临城镇",
+                        "fullName": "临高县临城镇",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000291656508",
+                        "parentId": "461000000000000001724031",
+                        "name": "加来镇",
+                        "fullName": "临高县加来镇",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000291438803",
+                        "parentId": "461000000000000001724031",
+                        "name": "南宝镇",
+                        "fullName": "临高县南宝镇",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000291656497",
+                        "parentId": "461000000000000001724031",
+                        "name": "博厚镇",
+                        "fullName": "临高县博厚镇",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000291659838",
+                        "parentId": "461000000000000001724031",
+                        "name": "和舍镇",
+                        "fullName": "临高县和舍镇",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000291659106",
+                        "parentId": "461000000000000001724031",
+                        "name": "多文镇",
+                        "fullName": "临高县多文镇",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000291655114",
+                        "parentId": "461000000000000001724031",
+                        "name": "新盈镇",
+                        "fullName": "临高县新盈镇",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000291655144",
+                        "parentId": "461000000000000001724031",
+                        "name": "波莲镇",
+                        "fullName": "临高县波莲镇",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000291655089",
+                        "parentId": "461000000000000001724031",
+                        "name": "皇桐镇",
+                        "fullName": "临高县皇桐镇",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000291655027",
+                        "parentId": "461000000000000001724031",
+                        "name": "调楼镇",
+                        "fullName": "临高县调楼镇",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    }
+                ],
+                "isLeaf": false
+            },
+            {
+                "nodeId": "461000000000000001724040",
+                "parentId": "461000000000000001724041",
+                "name": "乐东县",
+                "fullName": "乐东县",
+                "levelNumber": 2,
+                "levelName": "市",
+                "children": [
+                    {
+                        "nodeId": "461000000000000293236544",
+                        "parentId": "461000000000000001724040",
+                        "name": "万冲镇",
+                        "fullName": "乐东县万冲镇",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000293236534",
+                        "parentId": "461000000000000001724040",
+                        "name": "九所镇",
+                        "fullName": "乐东县九所镇",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000293236537",
+                        "parentId": "461000000000000001724040",
+                        "name": "佛罗镇",
+                        "fullName": "乐东县佛罗镇",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000293242883",
+                        "parentId": "461000000000000001724040",
+                        "name": "利国镇",
+                        "fullName": "乐东县利国镇",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000293240561",
+                        "parentId": "461000000000000001724040",
+                        "name": "千家镇",
+                        "fullName": "乐东县千家镇",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000293236830",
+                        "parentId": "461000000000000001724040",
+                        "name": "大安镇",
+                        "fullName": "乐东县大安镇",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000293236168",
+                        "parentId": "461000000000000001724040",
+                        "name": "尖峰镇",
+                        "fullName": "乐东县尖峰镇",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000293242797",
+                        "parentId": "461000000000000001724040",
+                        "name": "志仲镇",
+                        "fullName": "乐东县志仲镇",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000293236530",
+                        "parentId": "461000000000000001724040",
+                        "name": "抱由镇",
+                        "fullName": "乐东县抱由镇",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000293242880",
+                        "parentId": "461000000000000001724040",
+                        "name": "莺歌海盐场",
+                        "fullName": "海南乐东县莺歌海盐场",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000293236220",
+                        "parentId": "461000000000000001724040",
+                        "name": "莺歌海镇",
+                        "fullName": "乐东县莺歌海镇",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000293242803",
+                        "parentId": "461000000000000001724040",
+                        "name": "黄流镇",
+                        "fullName": "乐东县黄流镇",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    }
+                ],
+                "isLeaf": false
+            },
+            {
+                "nodeId": "461000000000000001724028",
+                "parentId": "461000000000000001724041",
+                "name": "五指山市",
+                "fullName": "五指山市",
+                "levelNumber": 2,
+                "levelName": "市",
+                "children": [
+                    {
+                        "nodeId": "461000000000000292380112",
+                        "parentId": "461000000000000001724028",
+                        "name": "南圣镇",
+                        "fullName": "五指山市南圣镇",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000292385277",
+                        "parentId": "461000000000000001724028",
+                        "name": "毛道乡",
+                        "fullName": "五指山市毛道乡",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000292390686",
+                        "parentId": "461000000000000001724028",
+                        "name": "毛阳镇",
+                        "fullName": "五指山市毛阳镇",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000292380201",
+                        "parentId": "461000000000000001724028",
+                        "name": "水满乡",
+                        "fullName": "五指山市水满乡",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000292224734",
+                        "parentId": "461000000000000001724028",
+                        "name": "畅好乡",
+                        "fullName": "五指山市畅好乡",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000002166596446",
+                        "parentId": "461000000000000001724028",
+                        "name": "畅好居",
+                        "fullName": "海南五指山市畅好居",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000292409340",
+                        "parentId": "461000000000000001724028",
+                        "name": "番阳镇",
+                        "fullName": "五指山市番阳镇",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000292231052",
+                        "parentId": "461000000000000001724028",
+                        "name": "通什镇",
+                        "fullName": "海南五指山市通什镇",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    }
+                ],
+                "isLeaf": false
+            },
+            {
+                "nodeId": "461000000000000001724038",
+                "parentId": "461000000000000001724041",
+                "name": "保亭县",
+                "fullName": "保亭县",
+                "levelNumber": 2,
+                "levelName": "市",
+                "children": [
+                    {
+                        "nodeId": "461000000000000291454130",
+                        "parentId": "461000000000000001724038",
+                        "name": "三道镇",
+                        "fullName": "保亭县三道镇",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000291469618",
+                        "parentId": "461000000000000001724038",
+                        "name": "什玲镇",
+                        "fullName": "保亭县什玲镇",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000291470228",
+                        "parentId": "461000000000000001724038",
+                        "name": "保城镇",
+                        "fullName": "保亭县保城镇",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000291450984",
+                        "parentId": "461000000000000001724038",
+                        "name": "六弓乡",
+                        "fullName": "保亭县六弓乡",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000291458532",
+                        "parentId": "461000000000000001724038",
+                        "name": "加茂镇",
+                        "fullName": "保亭县加茂镇",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000291454299",
+                        "parentId": "461000000000000001724038",
+                        "name": "南林乡",
+                        "fullName": "保亭县南林乡",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000291459318",
+                        "parentId": "461000000000000001724038",
+                        "name": "响水镇",
+                        "fullName": "保亭县响水镇",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000291459311",
+                        "parentId": "461000000000000001724038",
+                        "name": "新政镇",
+                        "fullName": "保亭县新政镇",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000291451618",
+                        "parentId": "461000000000000001724038",
+                        "name": "毛感乡",
+                        "fullName": "保亭县毛感乡",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    }
+                ],
+                "isLeaf": false
+            },
+            {
+                "nodeId": "461000000000000001724030",
+                "parentId": "461000000000000001724041",
+                "name": "儋州市",
+                "fullName": "儋州市",
+                "levelNumber": 2,
+                "levelName": "市",
+                "children": [
+                    {
+                        "nodeId": "461000000000000291877792",
+                        "parentId": "461000000000000001724030",
+                        "name": "三都镇",
+                        "fullName": "儋州市三都镇",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000291840792",
+                        "parentId": "461000000000000001724030",
+                        "name": "东成镇",
+                        "fullName": "儋州市东成镇",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000291835060",
+                        "parentId": "461000000000000001724030",
+                        "name": "两院",
+                        "fullName": "儋州市两院",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000291894560",
+                        "parentId": "461000000000000001724030",
+                        "name": "中和镇",
+                        "fullName": "儋州市中和镇",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000291833626",
+                        "parentId": "461000000000000001724030",
+                        "name": "光村镇",
+                        "fullName": "儋州市光村镇",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000291848992",
+                        "parentId": "461000000000000001724030",
+                        "name": "八一农场",
+                        "fullName": "儋州市八一农场",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000291833699",
+                        "parentId": "461000000000000001724030",
+                        "name": "兰洋镇",
+                        "fullName": "儋州市兰洋镇",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000291875117",
+                        "parentId": "461000000000000001724030",
+                        "name": "南丰镇",
+                        "fullName": "儋州市南丰镇",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000291837017",
+                        "parentId": "461000000000000001724030",
+                        "name": "和庆镇",
+                        "fullName": "儋州市和庆镇",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000291840176",
+                        "parentId": "461000000000000001724030",
+                        "name": "大成镇",
+                        "fullName": "儋州市大成镇",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000291832977",
+                        "parentId": "461000000000000001724030",
+                        "name": "峨蔓镇",
+                        "fullName": "儋州市峨蔓镇",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000291876546",
+                        "parentId": "461000000000000001724030",
+                        "name": "排浦镇",
+                        "fullName": "儋州市排浦镇",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000291912666",
+                        "parentId": "461000000000000001724030",
+                        "name": "新州镇",
+                        "fullName": "儋州市新州镇",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000291911899",
+                        "parentId": "461000000000000001724030",
+                        "name": "新盈农场",
+                        "fullName": "儋州市新盈农场",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000291839098",
+                        "parentId": "461000000000000001724030",
+                        "name": "木棠镇",
+                        "fullName": "儋州市木棠镇",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000291910231",
+                        "parentId": "461000000000000001724030",
+                        "name": "洋浦开发区",
+                        "fullName": "儋州市洋浦开发区",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000291834940",
+                        "parentId": "461000000000000001724030",
+                        "name": "海头镇",
+                        "fullName": "儋州市海头镇",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000291878471",
+                        "parentId": "461000000000000001724030",
+                        "name": "王五镇",
+                        "fullName": "儋州市王五镇",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000291834164",
+                        "parentId": "461000000000000001724030",
+                        "name": "白马井镇",
+                        "fullName": "儋州市白马井镇",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000291879839",
+                        "parentId": "461000000000000001724030",
+                        "name": "西华农场",
+                        "fullName": "儋州市西华农场",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000291907337",
+                        "parentId": "461000000000000001724030",
+                        "name": "西培农场",
+                        "fullName": "儋州市西培农场",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000291909909",
+                        "parentId": "461000000000000001724030",
+                        "name": "西庆农场",
+                        "fullName": "儋州市西庆农场",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000291905940",
+                        "parentId": "461000000000000001724030",
+                        "name": "西流农场",
+                        "fullName": "儋州市西流农场",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000291903873",
+                        "parentId": "461000000000000001724030",
+                        "name": "西联农场",
+                        "fullName": "儋州市西联农场",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000291830541",
+                        "parentId": "461000000000000001724030",
+                        "name": "那大镇",
+                        "fullName": "儋州市那大镇",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000291907635",
+                        "parentId": "461000000000000001724030",
+                        "name": "雅星镇",
+                        "fullName": "儋州市雅星镇",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    }
+                ],
+                "isLeaf": false
+            },
+            {
+                "nodeId": "461000000000000001724024",
+                "parentId": "461000000000000001724041",
+                "name": "定安县",
+                "fullName": "定安县",
+                "levelNumber": 2,
+                "levelName": "市",
+                "children": [
+                    {
+                        "nodeId": "461000000000000291546530",
+                        "parentId": "461000000000000001724024",
+                        "name": "中瑞农场",
+                        "fullName": "定安县中瑞农场",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000291515848",
+                        "parentId": "461000000000000001724024",
+                        "name": "南海农场",
+                        "fullName": "定安县南海农场",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000291530137",
+                        "parentId": "461000000000000001724024",
+                        "name": "定城镇",
+                        "fullName": "定安县定城镇",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000291530759",
+                        "parentId": "461000000000000001724024",
+                        "name": "富文镇",
+                        "fullName": "定安县富文镇",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000291519194",
+                        "parentId": "461000000000000001724024",
+                        "name": "岭口镇",
+                        "fullName": "定安县岭口镇",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000291555284",
+                        "parentId": "461000000000000001724024",
+                        "name": "新竹镇",
+                        "fullName": "定安县新竹镇",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000291532039",
+                        "parentId": "461000000000000001724024",
+                        "name": "翰林镇",
+                        "fullName": "定安县翰林镇",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000291518510",
+                        "parentId": "461000000000000001724024",
+                        "name": "金鸡岭农场",
+                        "fullName": "定安县金鸡岭农场",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000291519061",
+                        "parentId": "461000000000000001724024",
+                        "name": "雷鸣镇",
+                        "fullName": "定安县雷鸣镇",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000291533327",
+                        "parentId": "461000000000000001724024",
+                        "name": "黄竹镇",
+                        "fullName": "定安县黄竹镇",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000291523881",
+                        "parentId": "461000000000000001724024",
+                        "name": "龙河镇",
+                        "fullName": "定安县龙河镇",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000291518521",
+                        "parentId": "461000000000000001724024",
+                        "name": "龙湖镇",
+                        "fullName": "定安县龙湖镇",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000291550551",
+                        "parentId": "461000000000000001724024",
+                        "name": "龙门镇",
+                        "fullName": "定安县龙门镇",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    }
+                ],
+                "isLeaf": false
+            },
+            {
+                "nodeId": "461000000000000001724025",
+                "parentId": "461000000000000001724041",
+                "name": "屯昌县",
+                "fullName": "屯昌县",
+                "levelNumber": 2,
+                "levelName": "市",
+                "children": [
+                    {
+                        "nodeId": "461000000000000291715839",
+                        "parentId": "461000000000000001724025",
+                        "name": "乌坡镇",
+                        "fullName": "屯昌县乌坡镇",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000291717219",
+                        "parentId": "461000000000000001724025",
+                        "name": "南吕镇",
+                        "fullName": "屯昌县南吕镇",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000291715864",
+                        "parentId": "461000000000000001724025",
+                        "name": "南坤镇",
+                        "fullName": "海南屯昌县南坤镇",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000002166651268",
+                        "parentId": "461000000000000001724025",
+                        "name": "南坤镇黄岭农场",
+                        "fullName": "海南屯昌县南坤镇黄岭农场",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000001301262470",
+                        "parentId": "461000000000000001724025",
+                        "name": "南坤镇（藤寨站）",
+                        "fullName": "屯昌县屯城镇（大同站）",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000001301262468",
+                        "parentId": "461000000000000001724025",
+                        "name": "南坤镇（黄岭站）",
+                        "fullName": "屯昌县屯城镇（大同站）",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000291717188",
+                        "parentId": "461000000000000001724025",
+                        "name": "坡心镇",
+                        "fullName": "屯昌县坡心镇",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000002164258324",
+                        "parentId": "461000000000000001724025",
+                        "name": "坡心镇中建农场",
+                        "fullName": "海南屯昌县坡心镇中建农场",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000291715836",
+                        "parentId": "461000000000000001724025",
+                        "name": "屯城镇",
+                        "fullName": "屯昌县屯城镇",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000001301262466",
+                        "parentId": "461000000000000001724025",
+                        "name": "屯城镇（大同站）",
+                        "fullName": "屯昌县屯城镇（大同站）",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000291716484",
+                        "parentId": "461000000000000001724025",
+                        "name": "新兴镇",
+                        "fullName": "屯昌县新兴镇",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000291715878",
+                        "parentId": "461000000000000001724025",
+                        "name": "枫木镇",
+                        "fullName": "屯昌县枫木镇",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000002167953277",
+                        "parentId": "461000000000000001724025",
+                        "name": "枫木镇南吕农场",
+                        "fullName": "海南屯昌县枫木镇南吕农场",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000291717131",
+                        "parentId": "461000000000000001724025",
+                        "name": "西昌镇",
+                        "fullName": "屯昌县西昌镇",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000002166654998",
+                        "parentId": "461000000000000001724025",
+                        "name": "西昌镇晨星农场",
+                        "fullName": "海南屯昌县西昌镇晨星农场",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    }
+                ],
+                "isLeaf": false
+            },
+            {
+                "nodeId": "461000000000000001724035",
+                "parentId": "461000000000000001724041",
+                "name": "文昌市",
+                "fullName": "文昌市",
+                "levelNumber": 2,
+                "levelName": "市",
+                "children": [
+                    {
+                        "nodeId": "461000000000000292054687",
+                        "parentId": "461000000000000001724035",
+                        "name": "东路农场",
+                        "fullName": "文昌市东路农场",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000291916342",
+                        "parentId": "461000000000000001724035",
+                        "name": "东路镇",
+                        "fullName": "文昌市东路镇",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000291953635",
+                        "parentId": "461000000000000001724035",
+                        "name": "东郊镇",
+                        "fullName": "文昌市东郊镇",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000291937705",
+                        "parentId": "461000000000000001724035",
+                        "name": "东阁镇",
+                        "fullName": "文昌市东阁镇",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000291956371",
+                        "parentId": "461000000000000001724035",
+                        "name": "会文镇",
+                        "fullName": "文昌市会文镇",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000291955016",
+                        "parentId": "461000000000000001724035",
+                        "name": "公坡镇",
+                        "fullName": "文昌市公坡镇",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000292079382",
+                        "parentId": "461000000000000001724035",
+                        "name": "冯坡镇",
+                        "fullName": "文昌市冯坡镇",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000292364447",
+                        "parentId": "461000000000000001724035",
+                        "name": "南阳农场",
+                        "fullName": "文昌市南阳农场",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000291937694",
+                        "parentId": "461000000000000001724035",
+                        "name": "南阳镇",
+                        "fullName": "文昌市南阳镇",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000292241513",
+                        "parentId": "461000000000000001724035",
+                        "name": "头苑镇",
+                        "fullName": "文昌市头苑镇",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000292239165",
+                        "parentId": "461000000000000001724035",
+                        "name": "宝芳镇",
+                        "fullName": "文昌市宝芳镇",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000292057518",
+                        "parentId": "461000000000000001724035",
+                        "name": "抱罗镇",
+                        "fullName": "文昌市抱罗镇",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000291952292",
+                        "parentId": "461000000000000001724035",
+                        "name": "文城镇",
+                        "fullName": "文昌市文城镇",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000291954992",
+                        "parentId": "461000000000000001724035",
+                        "name": "文教镇",
+                        "fullName": "文昌市文教镇",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000291937823",
+                        "parentId": "461000000000000001724035",
+                        "name": "新合镇",
+                        "fullName": "文昌市新合镇",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000292245956",
+                        "parentId": "461000000000000001724035",
+                        "name": "新桥镇",
+                        "fullName": "文昌市新桥镇",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000291954986",
+                        "parentId": "461000000000000001724035",
+                        "name": "昌洒镇",
+                        "fullName": "文昌市昌洒镇",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000292326245",
+                        "parentId": "461000000000000001724035",
+                        "name": "橡胶研究所",
+                        "fullName": "文昌市橡胶研究所",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000291953589",
+                        "parentId": "461000000000000001724035",
+                        "name": "清澜镇",
+                        "fullName": "文昌市清澜镇",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000291936360",
+                        "parentId": "461000000000000001724035",
+                        "name": "潭牛镇",
+                        "fullName": "文昌市潭牛镇",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000291953584",
+                        "parentId": "461000000000000001724035",
+                        "name": "约亭镇",
+                        "fullName": "文昌市约亭镇",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000292279496",
+                        "parentId": "461000000000000001724035",
+                        "name": "罗豆农场",
+                        "fullName": "文昌市罗豆农场",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000291936335",
+                        "parentId": "461000000000000001724035",
+                        "name": "翁田镇",
+                        "fullName": "文昌市翁田镇",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000292059541",
+                        "parentId": "461000000000000001724035",
+                        "name": "蓬莱镇",
+                        "fullName": "文昌市蓬莱镇",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000291953598",
+                        "parentId": "461000000000000001724035",
+                        "name": "迈号镇",
+                        "fullName": "文昌市迈号镇",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000291937714",
+                        "parentId": "461000000000000001724035",
+                        "name": "重兴镇",
+                        "fullName": "文昌市重兴镇",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000291954979",
+                        "parentId": "461000000000000001724035",
+                        "name": "铺前镇",
+                        "fullName": "文昌市铺前镇",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000291953595",
+                        "parentId": "461000000000000001724035",
+                        "name": "锦山镇",
+                        "fullName": "文昌市锦山镇",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000291953619",
+                        "parentId": "461000000000000001724035",
+                        "name": "龙楼镇",
+                        "fullName": "文昌市龙楼镇",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000292223322",
+                        "parentId": "461000000000000001724035",
+                        "name": "龙马镇",
+                        "fullName": "文昌市龙马镇",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    }
+                ],
+                "isLeaf": false
+            },
+            {
+                "nodeId": "461000000000000002411127",
+                "parentId": "461000000000000001724041",
+                "name": "昌江县",
+                "fullName": "昌江县",
+                "levelNumber": 2,
+                "levelName": "市",
+                "children": [
+                    {
+                        "nodeId": "461000000000000291482249",
+                        "parentId": "461000000000000002411127",
+                        "name": "七叉镇",
+                        "fullName": "昌江县七叉镇",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000291552794",
+                        "parentId": "461000000000000002411127",
+                        "name": "乌烈镇",
+                        "fullName": "昌江县乌烈镇",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000291480909",
+                        "parentId": "461000000000000002411127",
+                        "name": "十月田镇",
+                        "fullName": "昌江县十月田镇",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000291473789",
+                        "parentId": "461000000000000002411127",
+                        "name": "叉河镇",
+                        "fullName": "昌江县叉河镇",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000291473721",
+                        "parentId": "461000000000000002411127",
+                        "name": "昌化镇",
+                        "fullName": "昌江县昌化镇",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000291472353",
+                        "parentId": "461000000000000002411127",
+                        "name": "海尾镇",
+                        "fullName": "昌江县海尾镇",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000291552791",
+                        "parentId": "461000000000000002411127",
+                        "name": "王下乡",
+                        "fullName": "昌江县王下乡",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000291482705",
+                        "parentId": "461000000000000002411127",
+                        "name": "石碌镇",
+                        "fullName": "昌江县石碌镇",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000291483416",
+                        "parentId": "461000000000000002411127",
+                        "name": "红林农场",
+                        "fullName": "昌江县红林农场",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000291474355",
+                        "parentId": "461000000000000002411127",
+                        "name": "霸王岭国家森林公园",
+                        "fullName": "海南昌江县霸王岭国家森林公园",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    }
+                ],
+                "isLeaf": false
+            },
+            {
+                "nodeId": "461000000000003263808281",
+                "parentId": "461000000000000001724041",
+                "name": "海南本地网",
+                "fullName": "海南海南本地网",
+                "levelNumber": 2,
+                "levelName": "市",
+                "children": [
+                    {
+                        "nodeId": "461000000000003264109753",
+                        "parentId": "461000000000003263808281",
+                        "name": "三亚市test",
+                        "fullName": "海南海南本地网三亚市test",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000003263693771",
+                        "parentId": "461000000000003263808281",
+                        "name": "海口市test",
+                        "fullName": "海南海口市test",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    }
+                ],
+                "isLeaf": false
+            },
+            {
+                "nodeId": "461000000000000001724034",
+                "parentId": "461000000000000001724041",
+                "name": "海口市",
+                "fullName": "海南海口市",
+                "levelNumber": 2,
+                "levelName": "市",
+                "children": [
+                    {
+                        "nodeId": "461000000000000229439416",
+                        "parentId": "461000000000000001724034",
+                        "name": "琼山区",
+                        "fullName": "海南海口市琼山区",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000229451460",
+                        "parentId": "461000000000000001724034",
+                        "name": "琼山区三门坡镇",
+                        "fullName": "海南海口市琼山区三门坡镇",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000229458138",
+                        "parentId": "461000000000000001724034",
+                        "name": "琼山区云龙镇",
+                        "fullName": "海南海口市琼山区云龙镇",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000230208024",
+                        "parentId": "461000000000000001724034",
+                        "name": "琼山区大坡镇",
+                        "fullName": "海南海口市琼山区大坡镇",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000230220244",
+                        "parentId": "461000000000000001724034",
+                        "name": "琼山区府城镇",
+                        "fullName": "海南海口市琼山区府城镇",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000229446891",
+                        "parentId": "461000000000000001724034",
+                        "name": "琼山区旧州镇",
+                        "fullName": "海南海口市琼山区旧州镇",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000230218350",
+                        "parentId": "461000000000000001724034",
+                        "name": "琼山区灵山镇",
+                        "fullName": "海南海口市琼山区灵山镇",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000230184559",
+                        "parentId": "461000000000000001724034",
+                        "name": "琼山区甲子镇",
+                        "fullName": "海南海口市琼山区甲子镇",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000229456509",
+                        "parentId": "461000000000000001724034",
+                        "name": "琼山区红旗镇",
+                        "fullName": "海南海口市琼山区红旗镇",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000230187877",
+                        "parentId": "461000000000000001724034",
+                        "name": "琼山区谭文镇",
+                        "fullName": "海南海口市琼山区谭文镇",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000230202993",
+                        "parentId": "461000000000000001724034",
+                        "name": "琼山区龙塘镇",
+                        "fullName": "海南海口市琼山区龙塘镇",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000229439984",
+                        "parentId": "461000000000000001724034",
+                        "name": "秀英区",
+                        "fullName": "海南海口市秀英区",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000230244371",
+                        "parentId": "461000000000000001724034",
+                        "name": "秀英区东山镇",
+                        "fullName": "海南海口市秀英区东山镇",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000003210128921",
+                        "parentId": "461000000000000001724034",
+                        "name": "秀英区永兴镇",
+                        "fullName": "海南海口市秀英区永兴镇",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000229458248",
+                        "parentId": "461000000000000001724034",
+                        "name": "秀英区海秀镇",
+                        "fullName": "海南海口市秀英区海秀镇",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000229441003",
+                        "parentId": "461000000000000001724034",
+                        "name": "秀英区石山镇",
+                        "fullName": "海南海口市秀英区石山镇",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000229439347",
+                        "parentId": "461000000000000001724034",
+                        "name": "秀英区美安镇",
+                        "fullName": "海南海口市秀英区美安镇",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000229468144",
+                        "parentId": "461000000000000001724034",
+                        "name": "秀英区西秀镇",
+                        "fullName": "海南海口市秀英区西秀镇",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000229445909",
+                        "parentId": "461000000000000001724034",
+                        "name": "秀英区长流镇",
+                        "fullName": "海南海口市秀英区长流镇",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000229440934",
+                        "parentId": "461000000000000001724034",
+                        "name": "美兰区",
+                        "fullName": "海南海口市美兰区",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000229442206",
+                        "parentId": "461000000000000001724034",
+                        "name": "美兰区三江镇",
+                        "fullName": "海南海口市美兰区三江镇",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000230173390",
+                        "parentId": "461000000000000001724034",
+                        "name": "美兰区大致坡镇",
+                        "fullName": "海南海口市美兰区大致坡镇",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000229467237",
+                        "parentId": "461000000000000001724034",
+                        "name": "美兰区桂林洋经济开发区",
+                        "fullName": "海南海口市美兰区桂林洋经济开发区",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000229441716",
+                        "parentId": "461000000000000001724034",
+                        "name": "美兰区演丰镇",
+                        "fullName": "海南海口市美兰区演丰镇",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000229438558",
+                        "parentId": "461000000000000001724034",
+                        "name": "美兰区灵山镇",
+                        "fullName": "海南海口市美兰区灵山镇",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000229441479",
+                        "parentId": "461000000000000001724034",
+                        "name": "龙华区",
+                        "fullName": "海南海口市龙华区",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000229446015",
+                        "parentId": "461000000000000001724034",
+                        "name": "龙华区城西镇",
+                        "fullName": "海南海口市龙华区城西镇",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000229776927",
+                        "parentId": "461000000000000001724034",
+                        "name": "龙华区新坡镇",
+                        "fullName": "海南海口市龙华区新坡镇",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000865774684",
+                        "parentId": "461000000000000001724034",
+                        "name": "龙华区遵谭镇",
+                        "fullName": "海南海口市龙华区遵谭镇",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000229430756",
+                        "parentId": "461000000000000001724034",
+                        "name": "龙华区龙桥镇",
+                        "fullName": "海南海口市龙华区龙桥镇",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000229775351",
+                        "parentId": "461000000000000001724034",
+                        "name": "龙华区龙泉镇",
+                        "fullName": "海南海口市龙华区龙泉镇",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    }
+                ],
+                "isLeaf": false
+            },
+            {
+                "nodeId": "461000000000000001724026",
+                "parentId": "461000000000000001724041",
+                "name": "澄迈县",
+                "fullName": "澄迈县",
+                "levelNumber": 2,
+                "levelName": "市",
+                "children": [
+                    {
+                        "nodeId": "461000000000000291509668",
+                        "parentId": "461000000000000001724026",
+                        "name": "中兴镇",
+                        "fullName": "澄迈县中兴镇",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000291509735",
+                        "parentId": "461000000000000001724026",
+                        "name": "仁兴镇",
+                        "fullName": "澄迈县仁兴镇",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000291509741",
+                        "parentId": "461000000000000001724026",
+                        "name": "加乐镇",
+                        "fullName": "澄迈县加乐镇",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000291513764",
+                        "parentId": "461000000000000001724026",
+                        "name": "大丰镇",
+                        "fullName": "澄迈县大丰镇",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000291493985",
+                        "parentId": "461000000000000001724026",
+                        "name": "文儒镇",
+                        "fullName": "澄迈县文儒镇",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000291493960",
+                        "parentId": "461000000000000001724026",
+                        "name": "文儒镇石浮责任区",
+                        "fullName": "海南澄迈县文儒镇石浮责任区",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000291509708",
+                        "parentId": "461000000000000001724026",
+                        "name": "桥头镇",
+                        "fullName": "澄迈县桥头镇",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000291510833",
+                        "parentId": "461000000000000001724026",
+                        "name": "永发镇",
+                        "fullName": "澄迈县永发镇",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000291494082",
+                        "parentId": "461000000000000001724026",
+                        "name": "永发镇新吴责任区",
+                        "fullName": "海南澄迈县永发镇新吴责任区",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000291510826",
+                        "parentId": "461000000000000001724026",
+                        "name": "瑞溪镇",
+                        "fullName": "澄迈县瑞溪镇",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000291481484",
+                        "parentId": "461000000000000001724026",
+                        "name": "福山镇",
+                        "fullName": "澄迈县福山镇",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000291481481",
+                        "parentId": "461000000000000001724026",
+                        "name": "红光农场",
+                        "fullName": "澄迈县红光农场",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000291510179",
+                        "parentId": "461000000000000001724026",
+                        "name": "老城镇",
+                        "fullName": "澄迈县老城镇",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000291511001",
+                        "parentId": "461000000000000001724026",
+                        "name": "西达农场",
+                        "fullName": "澄迈县西达农场",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000291513665",
+                        "parentId": "461000000000000001724026",
+                        "name": "金安农场",
+                        "fullName": "澄迈县金安农场",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000291481504",
+                        "parentId": "461000000000000001724026",
+                        "name": "金江镇",
+                        "fullName": "澄迈县金江镇",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000001298197118",
+                        "parentId": "461000000000000001724026",
+                        "name": "金江镇基地",
+                        "fullName": "海南澄迈县金江镇基地",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000291509689",
+                        "parentId": "461000000000000001724026",
+                        "name": "金江镇太平责任区",
+                        "fullName": "海南澄迈县金江镇太平责任区",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000291509692",
+                        "parentId": "461000000000000001724026",
+                        "name": "金江镇山口责任区",
+                        "fullName": "海南澄迈县金江镇山口责任区",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000291509727",
+                        "parentId": "461000000000000001724026",
+                        "name": "金江镇美亭责任区",
+                        "fullName": "海南澄迈县金江镇美亭责任区",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000291501432",
+                        "parentId": "461000000000000001724026",
+                        "name": "金江镇长安责任区",
+                        "fullName": "海南澄迈县金江镇长安责任区",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    }
+                ],
+                "isLeaf": false
+            },
+            {
+                "nodeId": "461000000000000001724039",
+                "parentId": "461000000000000001724041",
+                "name": "琼中县",
+                "fullName": "琼中县",
+                "levelNumber": 2,
+                "levelName": "市",
+                "children": [
+                    {
+                        "nodeId": "461000000000000291698443",
+                        "parentId": "461000000000000001724039",
+                        "name": "上安乡",
+                        "fullName": "琼中县上安乡",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000291714552",
+                        "parentId": "461000000000000001724039",
+                        "name": "中平镇",
+                        "fullName": "琼中县中平镇",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000291703093",
+                        "parentId": "461000000000000001724039",
+                        "name": "乌石农场",
+                        "fullName": "琼中县乌石农场",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000291699731",
+                        "parentId": "461000000000000001724039",
+                        "name": "什运乡",
+                        "fullName": "琼中县什运乡",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000291702728",
+                        "parentId": "461000000000000001724039",
+                        "name": "加钗农场",
+                        "fullName": "琼中县加钗农场",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000291700104",
+                        "parentId": "461000000000000001724039",
+                        "name": "吊罗山乡",
+                        "fullName": "琼中县吊罗山乡",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000291700794",
+                        "parentId": "461000000000000001724039",
+                        "name": "和平镇",
+                        "fullName": "琼中县和平镇",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000292222106",
+                        "parentId": "461000000000000001724039",
+                        "name": "新市农场",
+                        "fullName": "海南琼中县新市农场",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": true
+                    },
+                    {
+                        "nodeId": "461000000000000292222134",
+                        "parentId": "461000000000000001724039",
+                        "name": "松涛林场",
+                        "fullName": "琼中县松涛林场",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000291700456",
+                        "parentId": "461000000000000001724039",
+                        "name": "湾岭镇",
+                        "fullName": "琼中县湾岭镇",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000291701410",
+                        "parentId": "461000000000000001724039",
+                        "name": "红毛镇",
+                        "fullName": "琼中县红毛镇",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000291693504",
+                        "parentId": "461000000000000001724039",
+                        "name": "营根镇",
+                        "fullName": "琼中县营根镇",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000291693407",
+                        "parentId": "461000000000000001724039",
+                        "name": "长征农场",
+                        "fullName": "琼中县长征农场",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000291698777",
+                        "parentId": "461000000000000001724039",
+                        "name": "长征镇",
+                        "fullName": "琼中县长征镇",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000291694279",
+                        "parentId": "461000000000000001724039",
+                        "name": "阳江农场",
+                        "fullName": "琼中县阳江农场",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000291695771",
+                        "parentId": "461000000000000001724039",
+                        "name": "黎母山林场",
+                        "fullName": "琼中县黎母山林场",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000291696381",
+                        "parentId": "461000000000000001724039",
+                        "name": "黎母山镇",
+                        "fullName": "琼中县黎母山镇",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    }
+                ],
+                "isLeaf": false
+            },
+            {
+                "nodeId": "461000000000000001724036",
+                "parentId": "461000000000000001724041",
+                "name": "琼海市",
+                "fullName": "琼海市",
+                "levelNumber": 2,
+                "levelName": "市",
+                "children": [
+                    {
+                        "nodeId": "461000000000000291916359",
+                        "parentId": "461000000000000001724036",
+                        "name": "万泉镇",
+                        "fullName": "琼海市万泉镇",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000291917958",
+                        "parentId": "461000000000000001724036",
+                        "name": "东升农场",
+                        "fullName": "琼海市东升农场",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000291918764",
+                        "parentId": "461000000000000001724036",
+                        "name": "东太农场",
+                        "fullName": "琼海市东太农场",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000291917305",
+                        "parentId": "461000000000000001724036",
+                        "name": "东红农场",
+                        "fullName": "琼海市东红农场",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000291918022",
+                        "parentId": "461000000000000001724036",
+                        "name": "中原镇",
+                        "fullName": "琼海市中原镇",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000291919308",
+                        "parentId": "461000000000000001724036",
+                        "name": "会山镇",
+                        "fullName": "琼海市会山镇",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000291917296",
+                        "parentId": "461000000000000001724036",
+                        "name": "博鳌镇",
+                        "fullName": "琼海市博鳌镇",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000291915954",
+                        "parentId": "461000000000000001724036",
+                        "name": "嘉积镇",
+                        "fullName": "琼海市嘉积镇",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000291917345",
+                        "parentId": "461000000000000001724036",
+                        "name": "塔洋镇",
+                        "fullName": "琼海市塔洋镇",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000291916732",
+                        "parentId": "461000000000000001724036",
+                        "name": "大路镇",
+                        "fullName": "琼海市大路镇",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000002168708561",
+                        "parentId": "461000000000000001724036",
+                        "name": "彬村山华侨经济区",
+                        "fullName": "海南琼海市彬村山华侨经济区",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000291914187",
+                        "parentId": "461000000000000001724036",
+                        "name": "潭门镇",
+                        "fullName": "琼海市潭门镇",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000291953799",
+                        "parentId": "461000000000000001724036",
+                        "name": "石壁镇",
+                        "fullName": "琼海市石壁镇",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000291917283",
+                        "parentId": "461000000000000001724036",
+                        "name": "长坡镇",
+                        "fullName": "琼海市长坡镇",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000291916755",
+                        "parentId": "461000000000000001724036",
+                        "name": "阳江镇",
+                        "fullName": "琼海市阳江镇",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000291916015",
+                        "parentId": "461000000000000001724036",
+                        "name": "龙江镇",
+                        "fullName": "琼海市龙江镇",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    }
+                ],
+                "isLeaf": false
+            },
+            {
+                "nodeId": "461000000000000001724032",
+                "parentId": "461000000000000001724041",
+                "name": "白沙县",
+                "fullName": "白沙县",
+                "levelNumber": 2,
+                "levelName": "市",
+                "children": [
+                    {
+                        "nodeId": "461000000000000291462513",
+                        "parentId": "461000000000000001724032",
+                        "name": "七坊镇",
+                        "fullName": "白沙县七坊镇",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000291446635",
+                        "parentId": "461000000000000001724032",
+                        "name": "元门乡",
+                        "fullName": "白沙县元门乡",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000291916335",
+                        "parentId": "461000000000000001724032",
+                        "name": "八一农场",
+                        "fullName": "白沙县八一农场",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000291461938",
+                        "parentId": "461000000000000001724032",
+                        "name": "南开乡",
+                        "fullName": "白沙县南开乡",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000291467851",
+                        "parentId": "461000000000000001724032",
+                        "name": "卫星农场",
+                        "fullName": "海南白沙县卫星农场",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000291446213",
+                        "parentId": "461000000000000001724032",
+                        "name": "大岭农场",
+                        "fullName": "白沙县大岭农场",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000291445268",
+                        "parentId": "461000000000000001724032",
+                        "name": "打安镇",
+                        "fullName": "白沙县打安镇",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000291468662",
+                        "parentId": "461000000000000001724032",
+                        "name": "牙叉农场",
+                        "fullName": "白沙县牙叉农场",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000291447346",
+                        "parentId": "461000000000000001724032",
+                        "name": "牙叉镇",
+                        "fullName": "白沙县牙叉镇",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000291447751",
+                        "parentId": "461000000000000001724032",
+                        "name": "珠碧江农场",
+                        "fullName": "白沙县珠碧江农场",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000291449795",
+                        "parentId": "461000000000000001724032",
+                        "name": "白沙农场",
+                        "fullName": "白沙县白沙农场",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000291468588",
+                        "parentId": "461000000000000001724032",
+                        "name": "细水乡",
+                        "fullName": "白沙县细水乡",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000291448349",
+                        "parentId": "461000000000000001724032",
+                        "name": "芙蓉田农场",
+                        "fullName": "白沙县芙蓉田农场",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000291467288",
+                        "parentId": "461000000000000001724032",
+                        "name": "荣邦乡",
+                        "fullName": "白沙县荣邦乡",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000291450462",
+                        "parentId": "461000000000000001724032",
+                        "name": "邦溪农场",
+                        "fullName": "海南白沙县邦溪农场",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": true
+                    },
+                    {
+                        "nodeId": "461000000000000291442121",
+                        "parentId": "461000000000000001724032",
+                        "name": "邦溪镇",
+                        "fullName": "白沙县邦溪镇",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000291448527",
+                        "parentId": "461000000000000001724032",
+                        "name": "金波乡",
+                        "fullName": "白沙县金波乡",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000291447293",
+                        "parentId": "461000000000000001724032",
+                        "name": "金波农场",
+                        "fullName": "白沙县金波农场",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000291447223",
+                        "parentId": "461000000000000001724032",
+                        "name": "阜龙乡",
+                        "fullName": "白沙县阜龙乡",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000291467231",
+                        "parentId": "461000000000000001724032",
+                        "name": "青松乡",
+                        "fullName": "白沙县青松乡",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000291448651",
+                        "parentId": "461000000000000001724032",
+                        "name": "龙江农场",
+                        "fullName": "白沙县龙江农场",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    }
+                ],
+                "isLeaf": false
+            },
+            {
+                "nodeId": "461000000000000001724029",
+                "parentId": "461000000000000001724041",
+                "name": "陵水县",
+                "fullName": "陵水县",
+                "levelNumber": 2,
+                "levelName": "市",
+                "children": [
+                    {
+                        "nodeId": "461000000000000291670146",
+                        "parentId": "461000000000000001724029",
+                        "name": "三才镇",
+                        "fullName": "陵水县三才镇",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000291668147",
+                        "parentId": "461000000000000001724029",
+                        "name": "光坡镇",
+                        "fullName": "陵水县光坡镇",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000291662335",
+                        "parentId": "461000000000000001724029",
+                        "name": "南平农场",
+                        "fullName": "陵水县南平农场",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000291671619",
+                        "parentId": "461000000000000001724029",
+                        "name": "吊罗山林场",
+                        "fullName": "陵水县吊罗山林场",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000291670882",
+                        "parentId": "461000000000000001724029",
+                        "name": "岭门农场",
+                        "fullName": "陵水县岭门农场",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000291670872",
+                        "parentId": "461000000000000001724029",
+                        "name": "提蒙乡",
+                        "fullName": "陵水县提蒙乡",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000291670908",
+                        "parentId": "461000000000000001724029",
+                        "name": "文罗镇",
+                        "fullName": "陵水县文罗镇",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000291669616",
+                        "parentId": "461000000000000001724029",
+                        "name": "新村镇",
+                        "fullName": "陵水县新村镇",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000291668788",
+                        "parentId": "461000000000000001724029",
+                        "name": "本号镇",
+                        "fullName": "陵水县本号镇",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000291668139",
+                        "parentId": "461000000000000001724029",
+                        "name": "椰林镇",
+                        "fullName": "陵水县椰林镇",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000291670826",
+                        "parentId": "461000000000000001724029",
+                        "name": "群英乡",
+                        "fullName": "陵水县群英乡",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000291668204",
+                        "parentId": "461000000000000001724029",
+                        "name": "英州镇",
+                        "fullName": "陵水县英州镇",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000291670912",
+                        "parentId": "461000000000000001724029",
+                        "name": "隆广镇",
+                        "fullName": "陵水县隆广镇",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    },
+                    {
+                        "nodeId": "461000000000000291670180",
+                        "parentId": "461000000000000001724029",
+                        "name": "黎安镇",
+                        "fullName": "陵水县黎安镇",
+                        "levelNumber": 3,
+                        "levelName": "区/县",
+                        "children": null,
+                        "isLeaf": false
+                    }
+                ],
+                "isLeaf": false
+            }
+        ],
+        "isLeaf": false
+    }
+]

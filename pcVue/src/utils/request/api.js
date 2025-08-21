@@ -4,8 +4,10 @@ import config from "./config.js";
 import { message } from "ant-design-vue";
 export function $axios(options) {
   return new Promise((resolve, reject) => {
-    // const json = require('@/mock/' + options.url + '.json')
-    // resolve(json)
+    console.log(options.url.split('/')[0], '解决')
+    const json = require('@/mock/' + options.url.split('/')[0] + '.json')
+    resolve(json)
+    return
     const instance = axios.create(
       Object.assign(
         {},
@@ -35,7 +37,7 @@ export function $axios(options) {
         let data;
         // IE9时response.data是undefined，因此需要使用response.request.responseText(Stringify后的字符串)
         if (response.data == undefined) {
-          data = response.request.responseText;
+          data = {};
         } else {
           data = response.data;
         }

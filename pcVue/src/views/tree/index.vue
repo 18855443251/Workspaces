@@ -1,7 +1,7 @@
 <template>
   <div class="customer_sandbox">
     <div class="sandbox_header">
-      <div class="header_left">海南中小微客户沙盘平台</div>
+      <div class="header_left">中小微客户沙盘平台</div>
       <!-- <div class="header_right"></div> -->
     </div>
     <div class="sandbox_content">
@@ -215,11 +215,11 @@ import {
   submitSave,
   encrypt,
   decrypt,
-} from "@/api/customerSandbox";
+} from "@/api/tree";
 import myPage from "@/components/myPage";
 import gridTable from "./gridTable";
 export default {
-  name: "customerSandbox",
+  name: "tree",
   components: { myPage, gridTable },
   data() {
     return {
@@ -289,14 +289,14 @@ export default {
     var url = window.location.href;
     var queryStart = url.indexOf("?");
     if (queryStart === -1) {
-      encrypt({}).then((res) => {
-        this.pingjieParams = res;
-        url = window.location.href + "?" + this.pingjieParams;
-        queryStart = url.indexOf("?");
-        this.getStaffId(url, queryStart);
-      });
+      // encrypt({}).then((res) => {
+      //   this.pingjieParams = res;
+      //   url = window.location.href + "?" + this.pingjieParams;
+      //   queryStart = url.indexOf("?");
+      //   // this.getStaffId(url, queryStart);
+      // });
     } else {
-      this.getStaffId(url, queryStart);
+      // this.getStaffId(url, queryStart);
     }
   },
   methods: {

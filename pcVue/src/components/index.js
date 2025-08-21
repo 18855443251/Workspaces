@@ -4,7 +4,7 @@
 
 import svgIcon from './svgIcon'
 const install = function (Vue) {
-  Vue.component(svgIcon.name, SvgIcon)
+  Vue.component(svgIcon.name, svgIcon)
 
 }
 

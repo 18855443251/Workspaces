@@ -1,26 +1,28 @@
 import Vue from "vue";
 import Router from "vue-router";
-import activityRouter from "./activity.js";//我的活动
-import customerSandboxRouter from "./customerSandbox.js";//中小微客户沙盘平台
-import communityViewRouter from "./communityView.js";//小区视图
+import treeRouter from "./tree.js";//中小微客户沙盘平台
 Vue.use(Router);
 export default new Router({
   mode: "history",
   // base: process.env.BASE_URL,
   routes: [
     {
-      path: "/operationLog",
-      name: "operationLog",
-      component: () => import("@/views/operationLog/index.vue"),
-      meta: { title: "操作日志" },
+      path: "/img1",
+      name: "img1",
+      component: () => import("@/views/img1.vue"),
+      meta: { title: "图片" },
+    },
+    {
+      path: "/paomadeng",
+      name: "paomadeng",
+      component: () => import("@/views/paomadeng.vue"),
+      meta: { title: "图片" },
     },
     {
       path: "/",
-      redirect: "/activity",
+      redirect: "/paomadeng",
     },
-    ...activityRouter,
-    ...customerSandboxRouter,
-    ...communityViewRouter
+    ...treeRouter,
   ],
   scrollBehavior: () => ({ y: 0 }), // 当跳到新的页面的时候 自动跳到该页面的顶部
 });
