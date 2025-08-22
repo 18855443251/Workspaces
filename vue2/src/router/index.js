@@ -83,7 +83,7 @@ import secondRouter from "./secondRouter.js";
 import directives1 from "./directives1.js";
 import fileDown from "./fileDown.js";
 import window1 from "./window1.js";
-import echarts from "./echarts.js";
+import video from "./video.js";
 const routes = [
   {
     path: "/home",
@@ -262,7 +262,7 @@ const routes = [
   ...directives1,
   ...fileDown,
   ...window1,
-  ...echarts,
+  ...video,
   // ...table
   {
     path: "*",

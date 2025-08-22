@@ -11,7 +11,7 @@
       :show="$store.state.user.isShowLoading"
       :loadingIcon="$store.state.user.loadingIcon"
     ></my-loading>
-    <watermark v-if="$store.state.user.watermarkObj.staffAccount"></watermark>
+    <watermark v-if="$store.state.user.staffAccount"></watermark>
   </div>
 </template>
 <script>

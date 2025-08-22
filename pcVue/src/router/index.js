@@ -1,6 +1,8 @@
 import Vue from "vue";
 import Router from "vue-router";
 import treeRouter from "./tree.js";//中小微客户沙盘平台
+import tableRouter from "./table.js";//中小微客户沙盘平台
+import echartRouter from "./echart.js";//中小微客户沙盘平台
 Vue.use(Router);
 export default new Router({
   mode: "history",
@@ -23,6 +25,8 @@ export default new Router({
       redirect: "/paomadeng",
     },
     ...treeRouter,
+    ...tableRouter,
+    ...echartRouter
   ],
   scrollBehavior: () => ({ y: 0 }), // 当跳到新的页面的时候 自动跳到该页面的顶部
 });

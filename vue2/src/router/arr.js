@@ -41,6 +41,8 @@ const reduce1 = () =>
   import(/* webpackChunkName: "my" */ "@/views/arr/reduce1.vue"); // 通讯录
 const reduce2 = () =>
   import(/* webpackChunkName: "my" */ "@/views/arr/reduce2.vue"); // 通讯录
+const reduce3 = () =>
+  import(/* webpackChunkName: "my" */ "@/views/arr/reduce3.vue"); // 通讯录
 const at = () => import(/* webpackChunkName: "my" */ "@/views/arr/at.vue"); // 通讯录
 const cancat = () =>
   import(/* webpackChunkName: "my" */ "@/views/arr/cancat.vue"); // 通讯录
@@ -149,6 +151,11 @@ export default [
     name: "reduce2",
     path: "/reduce2",
     component: reduce2,
+  },
+  {
+    name: "reduce3",
+    path: "/reduce3",
+    component: reduce3,
   },
   {
     name: "at",

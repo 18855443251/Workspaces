@@ -1,6 +1,7 @@
 const state = {
   isShowLoading: false, //遮罩
   loadingIcon: '',//loading图标
+  staffAccount:''
 }
 
 const mutations = {

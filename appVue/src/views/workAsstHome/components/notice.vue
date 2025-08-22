@@ -1,5 +1,5 @@
 <template>
-  <div></div>
+  <div>通知</div>
 </template>
 
 <script>
@@ -8,6 +8,9 @@ export default {
   components: {},
   data() {
     return {};
+  },
+    created() {
+    console.log("通知");
   },
   methods: {},
 };
