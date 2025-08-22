@@ -7,9 +7,18 @@ import loginRouter from "./login.js";//登录
 import workAsstHomeRouter from "./workAsstHome.js";//工作助手首页
 const routes = [
   {
+    name: 'theme',
+    path: '/theme',
+    component: () => import("@/views/theme.vue"),
+    meta: {
+      title: "登录[1级]"
+    }
+  },
+  {
     path: "/",
     redirect: "/login",
   },
+
   ...loginRouter,
   ...workAsstHomeRouter,
 ]

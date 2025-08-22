@@ -19,7 +19,8 @@ export default {
 </script>
 
 <style lang="less" scoped>
+// @import '~@/assets/styles/themes/default/variables.less'; // 引入变量文件
 .test {
-  color: var(--primary-color);
+  // color: @primary-color;
 }
 </style>
