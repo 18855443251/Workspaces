@@ -20,6 +20,6 @@ export default {
 
 <style lang="less" scoped>
 .test {
-  color: @brand-success;
+  color: var(--primary-color);
 }
 </style>

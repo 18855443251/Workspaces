@@ -6,7 +6,8 @@ import './plugins/vant'
 import components from './components'
 import filters from './filters'
 import 'vant/lib/icon/local.css';
-import './assets/styles/common.less'
+import '@/assets/styles/common.less'
+import '@/assets/styles/themes/default/variables.less'
 import mixins from "./mixins";
 import '@/assets/styles/icons/fulldesign_icons.css';
 import '@/assets/styles/fonts/font.css'
