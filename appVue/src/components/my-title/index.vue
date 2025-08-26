@@ -19,7 +19,7 @@
             class="left_icon"
             v-if="leftIcon"
             :name="leftIcon"
-            @click.stop="handleGoBack"
+            @click.stop="handleLeftIcon"
           />
           <!-- 左侧文本 -->
           <span
@@ -68,32 +68,7 @@
       <slot name="middle"></slot>
     </div>
     <!-- 底部 -->
-    <div class="footer" v-if="footer">
-      <slot name="footer">
-        <slot name="footerLeft"></slot>
-        <slot name="footerRight">
-          <div class="footer_left" v-if="isShowReport">
-            <van-tabs
-              type="card"
-              v-model="active"
-              @click="handleReport"
-              :before-change="beforeTabChange"
-            >
-              <van-tab
-                :title="tab.title"
-                v-for="(tab, index) in reportList"
-                :key="index"
-              >
-              </van-tab>
-            </van-tabs>
-          </div>
-          <div class="footer_right" v-if="isShowDate" @click="handleDate">
-            <span class="date">{{ date }}</span>
-            <span class="FullDesignIcons ico_calendar"></span>
-          </div>
-        </slot>
-      </slot>
-    </div>
+    <slot name="footer"> </slot>
   </div>
 </template>
 
@@ -141,69 +116,17 @@ export default {
       type: String,
       default: "",
     },
-    // 日报月报列表
-    reportList: {
-      type: Array,
-      default: () => [
-        {
-          title: "日报",
-        },
-        {
-          title: "月报",
-        },
-      ],
-    },
-    // 默认显示日报
-    value: {
-      type: Number,
-      default: 1,
-    },
-
-    // 日期
-    date: {
-      type: String,
-      default: "-",
-    },
     // 头部自定义返回
     isControlBack: {
       type: Boolean,
       default: false,
     },
-    // 是否展示底部
-    footer: {
-      type: Boolean,
-      default: true,
-    },
-    // 是否展示报告
-    isShowReport: {
-      type: Boolean,
-      default: true,
-    },
-    // 是否展示日期
-    isShowDate: {
-      type: Boolean,
-      default: true,
-    },
-    // 日报月报是否禁用
-    disabled: {
-      type: Boolean,
-      default: true,
-    },
   },
   data() {
     return {
-      active: 1, //1默认月报
       clickCount: 0, // 点击计数器
       clickTimer: null, // 计时器用于判断点击间隔
     };
-  },
-  watch: {
-    value: {
-      handler(newValue, oldValue) {
-        this.active = newValue;
-      },
-      immediate: true,
-    },
   },
   methods: {
     // 返回
@@ -219,9 +142,13 @@ export default {
       this.$emit("handleLeftImg");
     },
     // 左侧图标
-    // handleLeftIcon() {
-    //   this.$emit("handleLeftIcon");
-    // },
+    handleLeftIcon() {
+      if (!this.isControlBack) {
+        this.$router.back();
+      } else {
+        this.$emit("handleLeftIcon");
+      }
+    },
     // 左侧文本
     handleLeftText() {
       this.$emit("handleLeftText");
@@ -241,23 +168,6 @@ export default {
     //右侧
     handleRight() {
       this.$emit("handleRight");
-    },
-    // 日报、月报按钮
-    handleReport(name, title) {
-      this.$emit("handleReport", name, title);
-    },
-    beforeTabChange(index) {
-      if (this.disabled) {
-        const disabledTabs = [0, 1]; // 日报(index=0)和月报(index=1)的索引
-        if (disabledTabs.includes(index)) {
-          return false; // 阻止切换
-        }
-      }
-      return true; // 允许切换
-    },
-    // 点击日期
-    handleDate() {
-      this.$emit("handleDate");
     },
     // 点击标题
     handleTitle() {
@@ -346,61 +256,6 @@ export default {
     justify-content: space-between;
     align-items: center;
     padding: 6px 16px;
-  }
-  .footer {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 12px 16px 16px 16px;
-    .footer_left {
-      // margin-right: 10px;
-    }
-    .footer_right {
-      margin-left: auto;
-      width: fit-content;
-      padding: 2px 6px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      border-radius: 4px;
-      background: rgba(255, 255, 255, 0.1);
-      .date {
-        min-width: 50px;
-        white-space: nowrap;
-        margin-right: 5px;
-      }
-    }
-    /deep/.van-tabs {
-      height: 28px;
-      .van-tabs__nav {
-        border-radius: 4px;
-        border: 1px solid rgba(255, 255, 255, 0.2);
-        background: rgba(255, 255, 255, 0.12);
-      }
-
-      // 选中颜色
-      .van-tabs__nav--card .van-tab.van-tab--active {
-        background: rgba(255, 255, 255, 0.9);
-        color: #008aff;
-        border-radius: 4px;
-      }
-      .van-tabs__nav--card .van-tab--disabled:nth-child(2) {
-        background: rgba(255, 255, 255, 0.9);
-        color: #008aff;
-        border-radius: 4px;
-      }
-      // 默认颜色
-      .van-tabs__nav--card .van-tab {
-        color: #ffffff;
-        border: none;
-        padding: 3px 7px;
-      }
-      .van-tabs__nav {
-        padding: 4px;
-        margin: 0;
-      }
-    }
   }
 }
 </style>

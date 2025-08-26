@@ -1,11 +1,9 @@
 <template>
   <div class="theme-switcher">
+    <!-- 标题 -->
+    <my-title title="换肤" :footer="false"> </my-title>
     <select v-model="selectedTheme" @change="changeTheme">
-      <option 
-        v-for="theme in themes" 
-        :key="theme.name" 
-        :value="theme.name"
-      >
+      <option v-for="theme in themes" :key="theme.name" :value="theme.name">
         {{ theme.label }}
       </option>
     </select>
@@ -13,26 +11,26 @@
 </template>
 
 <script>
-import themeManager from '@/utils/theme.js';
+import themeManager from "@/utils/theme.js";
 
 export default {
-  name: 'ThemeSwitcher',
+  name: "ThemeSwitcher",
   data() {
     return {
-      selectedTheme: 'default',
-      themes: []
+      selectedTheme: "default",
+      themes: [],
     };
   },
   mounted() {
     this.themes = themeManager.getThemes();
-    this.selectedTheme = localStorage.getItem('app-theme') || 'default';
+    this.selectedTheme = localStorage.getItem("app-theme") || "default";
   },
   methods: {
     changeTheme(value) {
-      console.log(this.selectedTheme,'间距')
+      console.log(this.selectedTheme, "间距");
       themeManager.setTheme(this.selectedTheme);
-    }
-  }
+    },
+  },
 };
 </script>
 
@@ -42,6 +40,7 @@ export default {
 }
 
 .theme-switcher select {
+  margin-top: 100px;
   padding: 5px 10px;
   border-radius: 4px;
   border: 1px solid var(--color-text-d);

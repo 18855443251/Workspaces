@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="test">首页</div>
+    <div class="test">首页首页首页首页首页首页</div>
   </div>
 </template>
 
@@ -19,8 +19,8 @@ export default {
 </script>
 
 <style lang="less" scoped>
-// @import '~@/assets/styles/themes/default/variables.less'; // 引入变量文件
 .test {
-  // color: @primary-color;
+  background-color: var(--color-background);
+  color: var(--color-text);
 }
 </style>

@@ -1,5 +1,5 @@
 <template>
-  <div>通知</div>
+  <div class="test">通知通知通知通知通知通知</div>
 </template>
 
 <script>
@@ -9,7 +9,7 @@ export default {
   data() {
     return {};
   },
-    created() {
+  created() {
     console.log("通知");
   },
   methods: {},
@@ -17,4 +17,8 @@ export default {
 </script>
 
 <style lang="less" scoped>
+.test {
+  background-color: var(--color-background);
+  color: var(--color-text);
+}
 </style>
