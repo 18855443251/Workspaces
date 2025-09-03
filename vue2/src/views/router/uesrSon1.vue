@@ -16,7 +16,7 @@
 
 <script>
 export default {
-  name: "left",
+  name: "uesrSon1",
   data() {
     return {
     };

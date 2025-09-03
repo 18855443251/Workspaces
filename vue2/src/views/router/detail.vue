@@ -9,8 +9,8 @@
 <template>
   <div id="card">
     <div>
+      <div>{{ $route.params }}</div>
       <div>detail</div>
-      <div class="test" @click="test">类选择器</div>
     </div>
   </div>
 </template>
@@ -24,8 +24,13 @@ export default {
       isLeave: false,
     };
   },
-  mounted() {
-    console.log("第一种获取方式：", this.$route.params); //{username: '张三', age: '18'}
+  watch: {
+    $route: {
+      handler(newV, oldV) {
+        console.log("第二种获取方式：", newV.params); //{username: '张三', age: '18'}
+      },
+      immediate: true,
+    },
   },
   // beforeRouteEnter函数体内获取不到this实例
   beforeRouteEnter(to, from, next) {
@@ -61,14 +66,6 @@ export default {
       }
     }
   },
-  watch: {
-    $route: {
-      handler(newV, oldV) {
-        console.log("第二种获取方式：", newV.params); //{username: '张三', age: '18'}
-      },
-      immediate: true,
-    },
-  },
 
   methods: {
     goErrorPage(next) {
@@ -78,9 +75,6 @@ export default {
           message: "登录失败，请联系科技人员！",
         },
       });
-    },
-    test() {
-      this.jump("/routerQ1");
     },
   },
 };

@@ -3,7 +3,7 @@ export default [
   // params1后面的参数可传可不传
   {
     name: "params1",
-    path: "/params1/:name?",
+    path: "/params1/:userName?",
     component: () =>
       import(/* webpackChunkName: "rep" */ "@/views/router/params1.vue"),
   },
@@ -25,13 +25,24 @@ export default [
   {
     name: "routerP1",
     path: "/routerP1",
+    // path: "/routerP1-*", // 会匹配以 `/routerP1-` 开头的任意路径
     component: () =>
       import(/* webpackChunkName: "rep" */ "@/views/router/routerP1.vue"),
     meta: {
       isLogin: true,
     },
   },
-
+  {
+    name: "detail",
+    path: "/detail/:username/ages/:age",
+    meta: {
+      title: "详情页面",
+      keepAlive: true, // 不需要缓存
+      isAuth: true,
+    },
+    component: () =>
+      import(/* webpackChunkName: "detail" */ "@/views/router/detail.vue"),
+  },
   {
     name: "user1",
     path: "/user1/:username",
@@ -53,7 +64,7 @@ export default [
       import(/* webpackChunkName: "rep" */ "@/views/router/main.vue"),
     redirect: {
       path: "/main/right",
-    },
+    },//默认展示右边
     children: [
       {
         name: "left",
@@ -75,15 +86,5 @@ export default [
       },
     ],
   },
-  {
-    name: "detail",
-    path: "/detail/:username/ages/:age",
-    meta: {
-      title: "详情页面",
-      keepAlive: true, // 不需要缓存
-      isAuth: true,
-    },
-    component: () =>
-      import(/* webpackChunkName: "detail" */ "@/views/router/detail.vue"),
-  },
+
 ];

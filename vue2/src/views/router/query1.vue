@@ -14,7 +14,7 @@
 
 <script>
 export default {
-  name: "right",
+  name: "query1",
   data() {
     return {
       redirect: "",
