@@ -1,5 +1,9 @@
 <template>
   <div id="card">
+    <div class="test">传参</div>
+    <div>
+      从顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶从顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶从顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶从顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶从顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶从顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶从顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶从顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶从顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶从顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶从顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶从顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶
+    </div>
     <router-link to="/query1?key=黑马&name=张三"
       >声明式导航查询参数传参</router-link
     >
@@ -40,4 +44,9 @@ export default {
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+.test {
+  height: 900px;
+  background: red;
+}
+</style>

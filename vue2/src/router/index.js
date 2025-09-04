@@ -272,7 +272,46 @@ const routes = [
 const router = new VueRouter({
   // mode:'history',
   routes,
+  scrollBehavior(to, from, savedPosition) {
+    if (savedPosition) {
+      // 路由后退/前进时,滚动条复位到原位置
+      return savedPosition
+    } else {
+      // 路由切换时滚动条复位到顶部
+      return {
+        x: 0,
+        y: 0
+      }
+    }
+  },
+  // scrollBehavior(to, from, savedPosition) {
+  //   console.log(to.hash,'哈哈')
+  //   if (to.hash) {
+  //     return {
+  //       selector: to.hash
+  //     }
+  //   }
+  // }
 });
+
+
+// scrollBehavior (to, from, savedPosition) {
+//   if (to.hash) {
+//     return {
+//       selector: to.hash
+//     }
+//   }
+// }
+
+// scrollBehavior (to, from, savedPosition) {
+//   if (to.hash) {
+//     return {
+//       selector: to.hash,
+//       behavior: 'smooth',
+//     }
+//   }
+// }
+
 // router.beforeEach((to, from, next) => {
 // console.log(to.query)
 // console.log(router.indexRouter = to.path;)

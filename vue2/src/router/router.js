@@ -59,7 +59,7 @@ export default [
   },
   {
     name: "main",
-    path: "/main",
+    path: "/main",//一定要添加/
     component: () =>
       import(/* webpackChunkName: "rep" */ "@/views/router/main.vue"),
     redirect: {
@@ -68,7 +68,7 @@ export default [
     children: [
       {
         name: "left",
-        path: "left",
+        path: "left",//不用添加/
         component: () =>
           import(/* webpackChunkName: "rep" */ "@/views/router/left.vue"),
       },
