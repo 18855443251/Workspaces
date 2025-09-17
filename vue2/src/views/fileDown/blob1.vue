@@ -1,6 +1,12 @@
 <template>
   <div class="claneCache_view">
-    <div @click="downloadFile" class="downloadExcel">下载excel文件</div>
+    <input
+      ref="excel-upload-input"
+      class="excel-upload-input"
+      type="file"
+      accept=".xlsx, .xls"
+      @change="uploadChange"
+    />
   </div>
 </template>
 <script>
@@ -17,13 +23,9 @@ export default {
   created() {},
   mounted() {},
   methods: {
-    downloadFile() {
-      const a = document.createElement("a");
-      a.href = "/templates/participant-template.xlsx";
-      a.setAttribute("download", "测试");
-      document.body.appendChild(a);
-      a.click();
-      document.body.removeChild(a);
+    test() {
+      // result是二进制流
+      FileSaver.saveAs(result, "员工信息表.xlsx"); // 下载文件
     },
   },
 };

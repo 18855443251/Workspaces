@@ -84,6 +84,7 @@ import directives1 from "./directives1.js";
 import fileDown from "./fileDown.js";
 import window1 from "./window1.js";
 import video from "./video.js";
+import websocket from "./websocket.js";
 const routes = [
   {
     path: "/home",
@@ -263,6 +264,7 @@ const routes = [
   ...fileDown,
   ...window1,
   ...video,
+  ...websocket,
   // ...table
   {
     path: "*",

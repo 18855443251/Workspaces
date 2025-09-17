@@ -1,20 +1,13 @@
-<!--
- * @Author: your name
- * @Date: 2021-08-12 15:06:34
- * @LastEditTime: 2022-08-04 10:39:21
- * @LastEditors: Please set LastEditors
- * @Description: In User Settings Edit
- * @FilePath: \vue\src\views\VxMobile.vue
--->
 <template>
   <div class="claneCache_view">
     <input
       ref="excel-upload-input"
       class="excel-upload-input"
       type="file"
-      accept=".xlsx, .xls"
       @change="uploadChange"
     />
+    <img :src="imgUrl" alt="" />
+    <!-- accept=".xlsx, .xls" -->
   </div>
 </template>
 <script>
@@ -26,11 +19,18 @@ export default {
   data() {
     return {
       inputVal: "",
+      imgUrl: "",
     };
   },
   created() {},
   mounted() {},
   methods: {
+    uploadChange(event) {
+      const file = event.target.files[0];
+      //  const file = this.$refs['excel-upload-input'].files[0];
+      this.imgUrl = URL.createObjectURL(file); // 创建的是指向文件在内存中副本的URL
+      console.log(file, this.imgUrl, "火狐");
+    },
     test() {
       // result是二进制流
       FileSaver.saveAs(result, "员工信息表.xlsx"); // 下载文件

@@ -84,7 +84,28 @@ export default [
         component: () =>
           import(/* webpackChunkName: "rep" */ "@/views/router/mainDetail.vue"),
       },
+
     ],
   },
-
+  {
+    name: "breadcrumbFather",
+    path: "/breadcrumbFather",
+    component: () =>
+      import(/* webpackChunkName: "rep" */ "@/views/router/breadcrumbFather.vue"),
+  },
+  // {
+  //   path: '/products',
+  //   name: 'Products',
+  //   component: () => import('@/views/router/Products.vue'),
+  //   meta: { breadcrumb: '产品' }
+  // },
+  // {
+  //   path: '/products/:id',
+  //   name: 'ProductDetail',
+  //   component: () => import('@/views/router/ProductDetail.vue'),
+  //   meta: {
+  //     breadcrumb: '产品详情',
+  //     title: '产品详情' // 备用标签源
+  //   }
+  // }
 ];

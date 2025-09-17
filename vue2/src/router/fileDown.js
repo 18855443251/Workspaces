@@ -49,4 +49,10 @@ export default [
     component: () =>
       import(/* webpackChunkName: "sort" */ "@/views/fileDown/fileDown5.vue"),
   },
+  {
+    name: "blob1",
+    path: "/blob1",
+    component: () =>
+      import(/* webpackChunkName: "sort" */ "@/views/fileDown/blob1.vue"),
+  },
 ];
