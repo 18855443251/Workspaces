@@ -7,8 +7,7 @@
         :key="index"
         :class="messageClass(message)"
       >
-        <div>{{ message.content }}</div>
-        <!-- <span> {{ message.content }}</span> -->
+        {{ message.content }}
       </div>
     </div>
     <div class="input-area">
@@ -52,7 +51,7 @@ export default {
       this.ws.onmessage = (event) => {
         console.log("收到服务器消息:", event.data);
         const response = JSON.parse(event.data);
-        this.messages.push({ type: response.type, content: response.chunk });
+        this.messages.push({ type: 'ai', content: response.chunk });
       };
 
       this.ws.onerror = (error) => {
@@ -121,6 +120,7 @@ export default {
   text-align: left;
   color: green;
   margin: 5px 0;
+  display: inline-block;
 }
 
 .system-message {
