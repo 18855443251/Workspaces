@@ -43,47 +43,6 @@
               <span></span>
               <span></span>
             </div>
-            <!-- 助手消息操作按钮 -->
-            <div
-              v-if="message.role === 'ai' && !message.loading"
-              class="message-actions"
-            >
-              <div
-                class="action-button"
-                @click="likeMessage(index)"
-                :class="{ active: message.liked }"
-              >
-                <img
-                  :src="
-                    message.liked
-                      ? require('@/assets/img/zanx.png')
-                      : require('@/assets/img/zan.png')
-                  "
-                  class="message-icon"
-                />
-              </div>
-              <div
-                class="action-button"
-                @click="dislikeMessage(index)"
-                :class="{ active: message.disliked }"
-              >
-                <img
-                  :src="
-                    message.disliked
-                      ? require('@/assets/img/caix.png')
-                      : require('@/assets/img/cai.png')
-                  "
-                  class="message-icon"
-                />
-              </div>
-              <div class="action_button" @click="copyMessage(message.content)">
-                <img
-                  src="@/assets/img/copy.png"
-                  alt="图片加载失败"
-                  class="message-icon"
-                />
-              </div>
-            </div>
           </div>
         </div>
       </div>
@@ -373,12 +332,12 @@ export default {
       )
         return;
 
-      const stopData = {
-        type: "stop_generation",
-        messageId: this.messageId,
-      };
+      // const stopData = {
+      //   type: "stop_generation",
+      //   messageId: this.messageId,
+      // };
 
-      this.websocket.send(JSON.stringify(stopData));
+      // this.websocket.send(JSON.stringify(stopData));
 
       // 立即停止本地加载状态
       if (this.isValidMessageIndex(this.currentAssistantMessageIndex)) {
