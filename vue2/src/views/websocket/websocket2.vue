@@ -1,4 +1,3 @@
-<!-- ✨ [新建] d:/前端代码/学习笔记/Workspaces/vue2/src/components/WebSocketChat.vue -->
 <template>
   <div class="chat-container">
     <div class="chat-messages" ref="chatMessages">
@@ -94,8 +93,10 @@
         <textarea
           v-model="inputMessage"
           @keyup.enter.exact="sendMessage"
+          @input="resizeTextarea"
           placeholder="请简要、清晰地描述单个场景的问题，字数不超过500个。"
           class="chat-textarea"
+          ref="textarea"
         ></textarea>
         <img
           v-if="!isReceiving"
@@ -128,6 +129,10 @@ export default {
       currentAssistantMessageIndex: -1, // 当前正在接收的助手消息索引
       isReceiving: false, // 是否正在接收消息
       messageId: null, // 当前消息IDs
+      reconnectInterval: null, // 重连定时器
+      reconnectAttempts: 0, // 重连尝试次数
+      maxReconnectAttempts: 5, // 最大重连尝试次数
+      typingTimer: null, // 打字效果定时器
     };
   },
   mounted() {
@@ -142,32 +147,67 @@ export default {
       if (this.websocket) {
         this.websocket.close();
       }
-      this.websocket = new WebSocket("ws://localhost:8181/ai-chat");
-      this.websocket.onopen = () => {
-        console.log("WebSocket连接已建立");
-        // 可以在这里发送初始化消息
-      };
 
-      this.websocket.onmessage = (event) => {
-        // 处理流式消息
-        this.handleStreamingMessage(event.data);
-      };
+      try {
+        this.websocket = new WebSocket(this.websocketUrl);
 
-      this.websocket.onerror = (error) => {
-        console.error("WebSocket错误:", error);
-        this.resetLoadingState();
-      };
+        this.websocket.onopen = () => {
+          console.log("WebSocket连接已建立");
+          this.reconnectAttempts = 0; // 重置重连次数
+        };
 
-      this.websocket.onclose = () => {
-        console.log("WebSocket连接已关闭");
-        this.resetLoadingState();
-      };
+        this.websocket.onmessage = (event) => {
+          // 处理流式消息
+          this.handleStreamingMessage(event.data);
+        };
+
+        this.websocket.onerror = (error) => {
+          console.error("WebSocket错误:", error);
+          this.resetLoadingState();
+          this.attemptReconnect();
+        };
+
+        this.websocket.onclose = () => {
+          console.log("WebSocket连接已关闭");
+          this.resetLoadingState();
+          this.attemptReconnect();
+        };
+      } catch (e) {
+        console.error("WebSocket初始化失败:", e);
+        this.attemptReconnect();
+      }
     },
+
+    // 尝试重连
+    attemptReconnect() {
+      if (this.reconnectAttempts < this.maxReconnectAttempts) {
+        this.reconnectAttempts++;
+        console.log(
+          `尝试重连 (${this.reconnectAttempts}/${this.maxReconnectAttempts})`
+        );
+
+        // 清除之前的重连定时器
+        if (this.reconnectInterval) {
+          clearTimeout(this.reconnectInterval);
+        }
+
+        // 设置重连延迟（指数退避）
+        const delay = Math.min(1000 * 2 ** this.reconnectAttempts, 10000);
+        this.reconnectInterval = setTimeout(() => {
+          this.initWebSocket();
+        }, delay);
+      } else {
+        console.error("达到最大重连尝试次数");
+        this.myToast("连接失败，请检查网络");
+      }
+    },
+
     // 处理流式消息
     handleStreamingMessage(data) {
       try {
         const response = JSON.parse(data);
         console.log("接收到流式消息:", response);
+
         if (response.type === "stream_start") {
           // 开始流式传输
           const newMessage = {
@@ -189,10 +229,7 @@ export default {
           this.messageId = response.messageId; // 保存消息ID
         } else if (response.type === "stream_chunk") {
           // 流式数据传输中
-          if (
-            this.currentAssistantMessageIndex >= 0 &&
-            this.currentAssistantMessageIndex < this.messages.length
-          ) {
+          if (this.isValidMessageIndex(this.currentAssistantMessageIndex)) {
             this.messages[this.currentAssistantMessageIndex].content +=
               response.content;
             console.log(
@@ -207,19 +244,14 @@ export default {
           }
         } else if (response.type === "stream_end") {
           // 流式传输结束
-          if (
-            this.currentAssistantMessageIndex >= 0 &&
-            this.currentAssistantMessageIndex < this.messages.length
-          ) {
+          if (this.isValidMessageIndex(this.currentAssistantMessageIndex)) {
             this.messages[this.currentAssistantMessageIndex].loading = false;
-            this.currentAssistantMessageIndex = -1;
           }
-          this.isReceiving = false;
-          this.messageId = null;
+          this.resetAssistantMessageState();
           console.log(
             "流式传输结束",
             this.currentAssistantMessageIndex,
-            this.messages[this.currentAssistantMessageIndex].content
+            this.messages[this.currentAssistantMessageIndex]?.content
           );
           // 最后滚动一次确保显示完整内容
           this.$nextTick(() => {
@@ -227,27 +259,19 @@ export default {
           });
         } else if (response.type === "stream_error") {
           // 流式传输错误
-          if (
-            this.currentAssistantMessageIndex >= 0 &&
-            this.currentAssistantMessageIndex < this.messages.length
-          ) {
+          if (this.isValidMessageIndex(this.currentAssistantMessageIndex)) {
             this.messages[this.currentAssistantMessageIndex].content +=
               "\n[错误]" + (response.message || "未知错误");
             this.messages[this.currentAssistantMessageIndex].loading = false;
-            this.currentAssistantMessageIndex = -1;
           }
-          this.isReceiving = false;
-          this.messageId = null;
+          this.resetAssistantMessageState();
           this.$nextTick(() => {
             this.scrollToBottom();
           });
         }
       } catch (e) {
         // 如果不是JSON格式，可能是纯文本流式数据
-        if (
-          this.currentAssistantMessageIndex >= 0 &&
-          this.currentAssistantMessageIndex < this.messages.length
-        ) {
+        if (this.isValidMessageIndex(this.currentAssistantMessageIndex)) {
           this.messages[this.currentAssistantMessageIndex].content += data;
           // 滚动到最新消息
           this.$nextTick(() => {
@@ -256,18 +280,27 @@ export default {
         }
       }
     },
-    // 重置加载状态
-    resetLoadingState() {
-      if (
-        this.currentAssistantMessageIndex >= 0 &&
-        this.currentAssistantMessageIndex < this.messages.length
-      ) {
-        this.messages[this.currentAssistantMessageIndex].loading = false;
-        this.currentAssistantMessageIndex = -1;
-      }
+
+    // 验证消息索引是否有效
+    isValidMessageIndex(index) {
+      return index >= 0 && index < this.messages.length;
+    },
+
+    // 重置助手消息状态
+    resetAssistantMessageState() {
+      this.currentAssistantMessageIndex = -1;
       this.isReceiving = false;
       this.messageId = null;
     },
+
+    // 重置加载状态
+    resetLoadingState() {
+      if (this.isValidMessageIndex(this.currentAssistantMessageIndex)) {
+        this.messages[this.currentAssistantMessageIndex].loading = false;
+      }
+      this.resetAssistantMessageState();
+    },
+
     sendMessage() {
       console.log(
         "用户发送消息:",
@@ -275,17 +308,23 @@ export default {
         this.websocket.readyState,
         WebSocket.OPEN
       );
+
       if (!this.inputMessage.trim()) {
         this.myToast("请输入消息");
         return;
       }
+
       if (
         this.isReceiving ||
         !this.websocket ||
         this.websocket.readyState !== WebSocket.OPEN
       ) {
+        if (!this.websocket || this.websocket.readyState !== WebSocket.OPEN) {
+          this.myToast("连接未建立，请稍后重试");
+        }
         return;
       }
+
       // 添加用户消息到本地显示
       const userMessage = {
         role: "user",
@@ -306,17 +345,25 @@ export default {
         this.websocket.send(JSON.stringify(messageData));
       } else {
         console.warn("WebSocket未连接，无法发送消息");
-        // 如果WebSocket未连接，可以考虑重新连接或给出提示
+        this.myToast("消息发送失败，请检查连接");
       }
 
       // 清空输入框
       this.inputMessage = "";
+
+      // 重置textarea高度
+      this.$nextTick(() => {
+        if (this.$refs.textarea) {
+          this.$refs.textarea.style.height = "auto";
+        }
+      });
 
       // 滚动到最新消息
       this.$nextTick(() => {
         this.scrollToBottom();
       });
     },
+
     // 停止生成
     stopGeneration() {
       if (
@@ -334,44 +381,74 @@ export default {
       this.websocket.send(JSON.stringify(stopData));
 
       // 立即停止本地加载状态
-      if (
-        this.currentAssistantMessageIndex >= 0 &&
-        this.currentAssistantMessageIndex < this.messages.length
-      ) {
+      if (this.isValidMessageIndex(this.currentAssistantMessageIndex)) {
         this.messages[this.currentAssistantMessageIndex].loading = false;
-        this.currentAssistantMessageIndex = -1;
       }
-      this.isReceiving = false;
-      this.messageId = null;
+      this.resetAssistantMessageState();
     },
+
     // 点赞消息
     likeMessage(index) {
+      if (!this.isValidMessageIndex(index)) return;
+
       this.messages[index].liked = !this.messages[index].liked;
       if (this.messages[index].liked) {
         this.messages[index].disliked = false;
       }
     },
+
     // 踩消息
     dislikeMessage(index) {
+      if (!this.isValidMessageIndex(index)) return;
       this.messages[index].disliked = !this.messages[index].disliked;
       if (this.messages[index].disliked) {
         this.messages[index].liked = false;
       }
     },
+
     // 复制消息内容
     copyMessage(content) {
-      // 创建一个临时的textarea元素
-      const textarea = document.createElement("textarea");
-      textarea.value = content;
-      document.body.appendChild(textarea);
+      try {
+        // 使用现代Clipboard API（如果支持）
+        if (navigator.clipboard) {
+          navigator.clipboard
+            .writeText(content)
+            .then(() => {
+              this.myToast("复制成功");
+            })
+            .catch(() => {
+              this.fallbackCopyTextToClipboard(content);
+            });
+        } else {
+          this.fallbackCopyTextToClipboard(content);
+        }
+      } catch (err) {
+        console.error("复制失败:", err);
+        this.myToast("复制失败");
+      }
+    },
 
-      // 选中并复制内容
+    // 降级复制方法
+    fallbackCopyTextToClipboard(text) {
+      const textarea = document.createElement("textarea");
+      textarea.value = text;
+      textarea.style.position = "fixed";
+      textarea.style.left = "-9999px";
+      document.body.appendChild(textarea);
       textarea.select();
-      document.execCommand("copy");
-      // 移除临时元素
+
+      try {
+        const successful = document.execCommand("copy");
+        if (successful) {
+          this.myToast("复制成功");
+        } else {
+          this.myToast("复制失败");
+        }
+      } catch (err) {
+        this.myToast("复制失败");
+      }
+
       document.body.removeChild(textarea);
-      // 显示复制成功的提示
-      this.myToast("复制成功");
     },
 
     scrollToBottom() {
@@ -380,6 +457,7 @@ export default {
         container.scrollTop = container.scrollHeight;
       }
     },
+
     formatDateTime(date) {
       const year = date.getFullYear();
       const month = (date.getMonth() + 1).toString().padStart(2, "0");
@@ -389,11 +467,30 @@ export default {
       const seconds = date.getSeconds().toString().padStart(2, "0");
       return `${year}-${month}-${day} ${hours}:${minutes}:${seconds}`;
     },
+
+    // 调整textarea高度
+    resizeTextarea() {
+      const textarea = this.$refs.textarea;
+      if (textarea) {
+        textarea.style.height = "auto";
+        textarea.style.height = Math.min(textarea.scrollHeight, 200) + "px";
+      }
+    },
   },
+
   beforeDestroy() {
     // 组件销毁前关闭WebSocket连接
     if (this.websocket) {
       this.websocket.close();
+    }
+
+    // 清理定时器
+    if (this.reconnectInterval) {
+      clearTimeout(this.reconnectInterval);
+    }
+
+    if (this.typingTimer) {
+      clearTimeout(this.typingTimer);
     }
   },
 };
@@ -562,10 +659,11 @@ export default {
   outline: none;
   resize: none;
   min-height: 2rem;
-  max-height: 2.4rem;
+  max-height: 4rem;
   font-family: inherit;
   font-size: 0.28rem;
   line-height: 1.4;
+  overflow-y: auto;
 }
 
 .send-icon,
@@ -574,6 +672,8 @@ export default {
   right: 0.2rem;
   bottom: 0.2rem;
   cursor: pointer;
+  width: 0.6rem;
+  height: 0.6rem;
 }
 
 .send-icon:hover {
@@ -607,9 +707,5 @@ export default {
 
 .action-button.active {
   color: white;
-}
-
-[v-cloak] {
-  display: none;
 }
 </style>
