@@ -8,9 +8,9 @@ function processAIQuestion(question) {
   // 示例中使用简单规则匹配
   const responses = {
     '你好': '你好！我是AI助手，有什么可以帮助你的吗？',
-    '天气': '今天天气晴朗，温度适宜。',
+    '天气': '今天天气晴朗，温度适宜会计法JFK角度看风景的房间对方空军的飞机。',
     '时间': `现在是${new Date().toLocaleString()}`,
-    '默认': '我已经收到你的问题，正在思考中...'
+    '默认': '我已经收到你的问题，正在思考中1...'
   }
   
   for (const [key, value] of Object.entries(responses)) {

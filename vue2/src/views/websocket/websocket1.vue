@@ -34,26 +34,24 @@ export default {
   methods: {
     initWebSocket() {
       // 连接到后端WebSocket服务
-      this.ws = new WebSocket('ws://localhost:8080/ai-chat')
+      this.ws = new WebSocket('ws://localhost:8181/ai-chat')
       
       this.ws.onopen = () => {
         console.log('WebSocket连接已建立')
-        this.messages.push({ type: 'system', content: '已连接到AI助手' })
       }
       
       this.ws.onmessage = (event) => {
+      console.log('收到服务器消息:', event.data)
         const response = JSON.parse(event.data)
         this.messages.push({ type: 'ai', content: response.answer })
       }
       
       this.ws.onerror = (error) => {
-        console.error('WebSocket错误:', error)
-        this.messages.push({ type: 'system', content: '连接出现错误' })
+        console.error('WebSocket错误1:', error)
       }
       
       this.ws.onclose = () => {
         console.log('WebSocket连接已关闭')
-        this.messages.push({ type: 'system', content: '连接已断开' })
       }
     },
     
