@@ -7,7 +7,7 @@ const http = require('http')
 function* streamAIResponse(question) {
   const responses = {
     '你好': '你好！我是AI助手，有什么可以帮助你的吗？',
-    '天气': '今天天气晴朗，温度适宜会计法JFK角度看风景的房间对方空军的飞机。',
+    '天气': '今天天气晴朗，温度适宜会计法JFK角度看风景的房间对方空军的飞机v官方vv的vdfdfdf烦烦烦风格风格。今天天气晴朗，温度适宜会计法JFK角度看风景的房间对方空军的飞机v官方vv的vdfdfdf烦烦烦风格风格。今天天气晴朗，温度适宜会计法JFK角度看风景的房间对方空军的飞机v官方vv的vdfdfdf烦烦烦风格风格。今天天气晴朗，温度适宜会计法JFK角度看风景的房间对方空军的飞机v官方vv的vdfdfdf烦烦烦风格风格sss。',
     '时间': `现在是${new Date().toLocaleString()}`,
     '默认': '我已经收到你的问题，正在思考中1...'
   };
@@ -43,15 +43,27 @@ wss.on('connection', (ws) => {
 
       // 模拟AI处理延迟
       // Replace the current setTimeout block with:
+      // Modify the sendChunk function in the message handler
       setTimeout(() => {
         const stream = streamAIResponse(question.content);
+        let isFirstChunk = true;
+
         const sendChunk = () => {
+          // Send stream_start message before the first chunk
+          if (isFirstChunk) {
+            ws.send(JSON.stringify({
+              type: 'stream_start',
+              timestamp: new Date().toISOString()
+            }));
+            isFirstChunk = false;
+          }
+
           const { value, done } = stream.next();
           if (!done) {
             ws.send(JSON.stringify({
               type: 'stream_chunk',
-              chunk: value,
-              timestamp: new Date().toISOString()
+              content: value,
+              time: new Date().toISOString()
             }));
             setTimeout(sendChunk, 200); // Send next chunk after 200ms
           } else {
