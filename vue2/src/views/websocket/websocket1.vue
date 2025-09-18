@@ -2,12 +2,21 @@
 <template>
   <div class="chat-container">
     <div class="chat-history">
-      <div v-for="(message, index) in messages" :key="index" :class="messageClass(message)">
-        {{ message.content }}
+      <div
+        v-for="(message, index) in messages"
+        :key="index"
+        :class="messageClass(message)"
+      >
+        <div>{{ message.content }}</div>
+        <!-- <span> {{ message.content }}</span> -->
       </div>
     </div>
     <div class="input-area">
-      <input v-model="userInput" @keyup.enter="sendMessage" placeholder="请输入问题..." />
+      <input
+        v-model="userInput"
+        @keyup.enter="sendMessage"
+        placeholder="请输入问题..."
+      />
       <button @click="sendMessage">发送</button>
     </div>
   </div>
@@ -15,71 +24,75 @@
 
 <script>
 export default {
-  name: 'WebSocketChat',
+  name: "WebSocketChat",
   data() {
     return {
       ws: null,
-      userInput: '',
-      messages: []
-    }
+      userInput: "",
+      messages: [],
+    };
   },
   mounted() {
-    this.initWebSocket()
+    this.initWebSocket();
   },
   beforeDestroy() {
     if (this.ws) {
-      this.ws.close()
+      this.ws.close();
     }
   },
   methods: {
     initWebSocket() {
       // 连接到后端WebSocket服务
-      this.ws = new WebSocket('ws://localhost:8181/ai-chat')
-      
+      this.ws = new WebSocket("ws://localhost:8181/ai-chat");
+
       this.ws.onopen = () => {
-        console.log('WebSocket连接已建立')
-      }
-      
+        console.log("WebSocket连接已建立");
+      };
+
       this.ws.onmessage = (event) => {
-      console.log('收到服务器消息:', event.data)
-        const response = JSON.parse(event.data)
-        this.messages.push({ type: 'ai', content: response.answer })
-      }
-      
+        console.log("收到服务器消息:", event.data);
+        const response = JSON.parse(event.data);
+        this.messages.push({ type: response.type, content: response.chunk });
+      };
+
       this.ws.onerror = (error) => {
-        console.error('WebSocket错误1:', error)
-      }
-      
+        console.error("WebSocket错误1:", error);
+      };
+
       this.ws.onclose = () => {
-        console.log('WebSocket连接已关闭')
-      }
+        console.log("WebSocket连接已关闭");
+      };
     },
-    
+
     sendMessage() {
-      if (!this.userInput.trim() || !this.ws || this.ws.readyState !== WebSocket.OPEN) {
-        return
+      if (
+        !this.userInput.trim() ||
+        !this.ws ||
+        this.ws.readyState !== WebSocket.OPEN
+      ) {
+        return;
       }
-      
+
       const question = {
-        type: 'question',
+        type: "question",
         content: this.userInput,
-        timestamp: new Date().toISOString()
-      }
-      
-      this.ws.send(JSON.stringify(question))
-      this.messages.push({ type: 'user', content: this.userInput })
-      this.userInput = ''
+        timestamp: new Date().toISOString(),
+      };
+
+      this.ws.send(JSON.stringify(question));
+      this.messages.push({ type: "user", content: this.userInput });
+      this.userInput = "";
     },
-    
+
     messageClass(message) {
       return {
-        'user-message': message.type === 'user',
-        'ai-message': message.type === 'ai',
-        'system-message': message.type === 'system'
-      }
-    }
-  }
-}
+        "user-message": message.type === "user",
+        "ai-message": message.type === "ai",
+        "system-message": message.type === "system",
+      };
+    },
+  },
+};
 </script>
 
 <style scoped>

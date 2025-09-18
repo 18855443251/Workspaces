@@ -3,23 +3,28 @@ const WebSocket = require('ws')
 const http = require('http')
 
 // 模拟AI问答处理函数
-function processAIQuestion(question) {
-  // 这里应该调用实际的AI模型API
-  // 示例中使用简单规则匹配
+// Instead of returning a complete response, create a generator or chunked response
+function* streamAIResponse(question) {
   const responses = {
     '你好': '你好！我是AI助手，有什么可以帮助你的吗？',
     '天气': '今天天气晴朗，温度适宜会计法JFK角度看风景的房间对方空军的飞机。',
     '时间': `现在是${new Date().toLocaleString()}`,
     '默认': '我已经收到你的问题，正在思考中1...'
-  }
-  
+  };
+
+  let answer = responses['默认'];
   for (const [key, value] of Object.entries(responses)) {
     if (question.includes(key)) {
-      return value
+      answer = value;
+      break;
     }
   }
-  
-  return responses['默认']
+
+  // Split answer into chunks for streaming
+  const chunks = answer.match(/.{1,5}/g) || [answer];
+  for (const chunk of chunks) {
+    yield chunk;
+  }
 }
 
 // 创建HTTP服务器
@@ -30,21 +35,35 @@ const wss = new WebSocket.Server({ server })
 
 wss.on('connection', (ws) => {
   console.log('新客户端已连接')
-  
+
   ws.on('message', (message) => {
     try {
       const question = JSON.parse(message)
       console.log('收到问题:', question.content)
-      
+
       // 模拟AI处理延迟
+      // Replace the current setTimeout block with:
       setTimeout(() => {
-        const answer = processAIQuestion(question.content)
-        ws.send(JSON.stringify({
-          type: 'answer',
-          answer: answer,
-          timestamp: new Date().toISOString()
-        }))
-      }, 1000)
+        const stream = streamAIResponse(question.content);
+        const sendChunk = () => {
+          const { value, done } = stream.next();
+          if (!done) {
+            ws.send(JSON.stringify({
+              type: 'stream_chunk',
+              chunk: value,
+              timestamp: new Date().toISOString()
+            }));
+            setTimeout(sendChunk, 200); // Send next chunk after 200ms
+          } else {
+            // Send end of stream message
+            ws.send(JSON.stringify({
+              type: 'stream_end',
+              timestamp: new Date().toISOString()
+            }));
+          }
+        };
+        sendChunk();
+      }, 1000);
     } catch (error) {
       console.error('消息解析错误:', error)
       ws.send(JSON.stringify({
@@ -53,7 +72,7 @@ wss.on('connection', (ws) => {
       }))
     }
   })
-  
+
   ws.on('close', () => {
     console.log('客户端已断开连接')
   })
