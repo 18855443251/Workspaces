@@ -16,6 +16,7 @@ import func from "./utils/func";
 import utils from "./utils";
 import navBar from "@/components/navBar";
 import directives from "./directives";
+import vueUtils from './utils/vueUtils'
 // 第一种引入方式 过滤器单独分开写，没有放在同一个index.js里面
 // import * as filters from './utils/filter'
 // Object.keys(filters).forEach(key => {
@@ -30,6 +31,7 @@ import "@/assets/css/common.less";
 Vue.use(utils, {
   ...func,
 });
+Vue.use(vueUtils)
 import clipboard from "vue-clipboard2";
 Vue.mixin(mixins);
 Vue.use(axiosPlugin);

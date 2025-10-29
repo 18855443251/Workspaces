@@ -33,14 +33,14 @@ module.exports = {
   productionSourceMap: false, // 生产环境是否生成 SourceMap
   filenameHashing: false, // 生产静态资源是否包含hash
   devServer: {
-    open: true,//自动打开浏览器
+    open: true, //自动打开浏览器
     // port:'8080',//端口默认8080 可以省略 http://localhost:8080/
     // host:'127.0.0.1',//http://127.0.0.1:8080/
     proxy: {
       "/api": {
         target: "http://135.127.33.33:31181", //
-        ws: true,//是否代理websovket
-        changeOrigin: true,//是否开启跨域
+        ws: true, //是否代理websovket
+        changeOrigin: true, //是否开启跨域
         pathRewrite: {
           "^/api": "", //代理的路径
         },
@@ -67,9 +67,15 @@ module.exports = {
       },
     },
   },
+  chainWebpack: (config) => {
+    config.plugin("html").tap((args) => {
+      args[0].title = "手机银行1";
+      return args;
+    });
+  },
   configureWebpack: (config) => {
-    if (process.env.NODE_ENV === 'production') {
-      config['plugins'].push(fileManagerPlugin)
+    if (process.env.NODE_ENV === "production") {
+      config["plugins"].push(fileManagerPlugin);
     }
   },
-}
+};

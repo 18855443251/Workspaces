@@ -31,6 +31,19 @@ export default {
     this.$store.commit("user/SET_NOW_MENUID", "菜单");
     this.$store.commit("user/SET_NAME", "李四");
     this.$store.dispatch("app/sidebarStatusShow", 2);
+    // const userActivityEvents = [
+    //   "keydown",
+    //   "click",
+    //   "scroll", // 滚动事件（涵盖mousewheel和DOMMouseScroll）
+    //   "mousemove", // 鼠标移动
+    // ];
+    // // 添加事件监听器并保存引用以便清理
+    // this.activityListeners = [];
+    // userActivityEvents.forEach((eventType) => {
+    //   const handler = this.debounce(this.handleScroll, 300);
+    //   window.addEventListener(eventType, handler, true);
+    //   this.activityListeners.push({ type: eventType, handler });
+    // });
     window.addEventListener(
       "keydown",
       this.debounce(this.handleScroll, 300),
@@ -88,6 +101,19 @@ export default {
       console.log(this.$store, "状态");
     },
   },
+//   beforeDestroy() {
+//   // 移除所有活动监听器
+//   if (this.activityListeners) {
+//     this.activityListeners.forEach(({ type, handler }) => {
+//       window.removeEventListener(type, handler, true);
+//     });
+//   }
+  
+//   // 清除定时器
+//   if (this.timer) {
+//     clearTimeout(this.timer);
+//   }
+// }
 };
 </script>
 

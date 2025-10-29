@@ -23,7 +23,7 @@
 import bankList from "./js/bankList/bankList.js";
 import ThemeJson from "@/json/theme.json";
 export default {
-  name: "home",
+  name: "json1",
   data() {
     return {
       ThemeJson:ThemeJson,

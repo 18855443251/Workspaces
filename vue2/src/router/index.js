@@ -277,13 +277,13 @@ const router = new VueRouter({
   scrollBehavior(to, from, savedPosition) {
     if (savedPosition) {
       // 路由后退/前进时,滚动条复位到原位置
-      return savedPosition
+      return savedPosition;
     } else {
       // 路由切换时滚动条复位到顶部
       return {
         x: 0,
-        y: 0
-      }
+        y: 0,
+      };
     }
   },
   // scrollBehavior(to, from, savedPosition) {
@@ -295,7 +295,6 @@ const router = new VueRouter({
   //   }
   // }
 });
-
 
 // scrollBehavior (to, from, savedPosition) {
 //   if (to.hash) {
@@ -314,22 +313,27 @@ const router = new VueRouter({
 //   }
 // }
 
-// router.beforeEach((to, from, next) => {
-// console.log(to.query)
-// console.log(router.indexRouter = to.path;)
-//   // 跳转router1的时候判断满足条件直接跳转登录
-//   // let a = to.matched.some((item) => {
-//   //   return item.path == "/routerP1";
-//   // });
-//   console.log(to.matched, "matched");
-//   let a = to.meta.isLogin;
-//   console.log(to.meta, "meta");
-//   if (a) {
-//     next({ path: '/login', query: { redirect: to.fullPath } });
-//   } else {
-//     next();
-//   }
-// });
+router.beforeEach((to, from, next) => {
+  console.log(to.query);
+  console.log((router.indexRouter = to.path));
+  // 跳转router1的时候判断满足条件直接跳转登录
+  // let a = to.matched.some((item) => {
+  //   return item.path == "/routerP1";
+  // });
+  console.log(to.matched, "matched");
+  let a = to.meta.isLogin;
+  console.log(to.meta, "meta");
+  if (to.path == "/window1") {
+    document.title = "测试时";
+  } else {
+    document.title = "手机银行1";
+  }
+  if (a) {
+    next({ path: "/login", query: { redirect: to.fullPath } });
+  } else {
+    next();
+  }
+});
 router.afterEach((to, from) => {
   // console.log(to, "to");
   // console.log(from, "from");
