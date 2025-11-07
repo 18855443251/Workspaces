@@ -108,4 +108,15 @@ export default [
   //     title: '产品详情' // 备用标签源
   //   }
   // }
+  {
+    path: '/contactList',
+    name: 'contactList',
+    component: () => import('@/views/router/contactList.vue'),
+  },
+  {
+    path: '/contactDetail/:id?',
+    name: 'contactDetail',
+    component: () => import('@/views/router/contactDetail.vue'),
+    props: true
+  }
 ];
